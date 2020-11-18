@@ -1,0 +1,21 @@
+/* 숨긴 콘텐츠 */
+.a11y-hidden,
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+}
+
+.container {
+  position: relative;
+  margin: 20px auto;
+  width: 510px;
+  height: 700px;
+  border: 1px solid #000;
+  overflow: auto;
+}

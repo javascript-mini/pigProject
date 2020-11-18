@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>메인페이지 | 돼지의 민족</title>
+
+  <!-- font -->
+  <link rel="stylesheet" href="css/font.css" />
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- JS Link -->
+  <script defer src="js/request.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="a11y-hidden">메인페이지</h1>
+    <!-- 주소 -->
+    <header class="address">
+      <p>주소를 입력해 주세요.</p>
+      <img src="./img/주소영역아이콘.svg" alt="">
+    </header>
+    <!-- 광고 배너 -->
+    <section class="ad">
+      <h2 class="a11y-hidden">광고 배너</h2>
+      <div class="ad-item-container">
+        <div class="ad-item">
+          <a href="#"><img src="./img/광고/ad1.jpg" alt=""></a>
+        </div>
+        <div class="ad-item">
+          <a href="#"><img src="./img/광고/ad2.jpg" alt=""></a>
+        </div>
+        <div class="ad-item">
+          <a href="#"><img src="./img/광고/ad3.jpg" alt=""></a>
+        </div>
+        <div class="ad-item">
+          <a href="#"><img src="./img/광고/ad4.jpg" alt=""></a>
+        </div>
+        <div class="ad-item">
+          <a href="#"><img src="./img/광고/ad5.jpg" alt=""></a>
+        </div>
+      </div>
+      <button class="ad-control prev">&laquo;</button>
+      <button class="ad-control next">&raquo;</button>
+    </section>
+    <!-- 메뉴 카테고리 -->
+    <div class="menu-category">
+      <ul>
+        <li><a href="category-list.html?cate=한식"><img src="./img/카테고리_아이콘/한식.png" alt="">한식</a></li>
+        <li><a href="category-list.html?cate=중식"><img src="./img/카테고리_아이콘/중식.png" alt="">중식</a></li>
+        <li><a href="category-list.html?cate=일식"><img src="./img/카테고리_아이콘/일식.png" alt="">일식</a></li>
+        <li><a href="category-list.html?cate=패스트푸드"><img src="./img/카테고리_아이콘/패스트푸드.png" alt="">패스트푸드</a></li>
+        <li><a href="category-list.html?cate=디저트"><img src="./img/카테고리_아이콘/디저트.png" alt="">디저트</a></li>
+        <li><a href="category-list.html?cate=치킨"><img src="./img/카테고리_아이콘/치킨.png" alt="">치킨</a></li>
+        <li><a href="category-list.html?cate=피자"><img src="./img/카테고리_아이콘/피자.png" alt="">피자</a></li>
+        <li><a href="category-list.html?cate=분식"><img src="./img/카테고리_아이콘/분식1.png" alt="">분식</a></li>
+        <li><a href="category-list.html?cate=안주"><img src="./img/카테고리_아이콘/안주.png" alt="">안주</a></li>
+      </ul>
+    </div>
+    <!-- 가게 검색 폼 -->
+    <div class="search-store-wrap">
+      <form>
+        <fieldset>
+          <legend>가게 검색 폼</legend>
+            <label for="search-store">
+              <input type="text" id="search-store" placeholder="가게 검색" autocomplete="off">
+            </label>
+        </fieldset>
+      </form>
+    </div>
+    <!-- 메인 메뉴 -->
+    <div class="main-menu">
+      <ul>
+        <li>
+          <a href="/">
+            <img src="./img/홈.png" alt="메인메뉴,홈버튼">
+            홈
+          </a>
+        </li>
+        <li>
+          <a href="/todayfood">
+            <img src="./img/123.svg" alt="메인메뉴,뭐먹지 버튼">
+            뭐 먹지?
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/가게상세-찜.png" alt="찜 버튼">
+            찜한 가게
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/마이페이지.svg" alt="마이 페이지 버튼">
+            My page
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="map-wrap">
+      <a href="#" class="prev-btn">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <h1>지번, 도로명, 건물명을 입력하세요</h1>
+      <form>
+        <fieldset>
+          <label for="search-address">
+            <input type="text" class="bd" id="search-address" placeholder="예&#41; 돼민동 12-3 또는 돼민아파트">
+            <button class="bd search-btn"></button>
+          </label>
+        </fieldset>
+      </form>
+      <div class="cur-position-wrap">
+        <button class="bd cur-position">현 위치로 주소 설정</button>
+      </div>
+      <div class="recent-address">
+        <h2>최근 주소</h2>
+        <ul id="recentAddress">
+          <li>
+            <span>
+              <span>성동구 성수동2가 277&#11;-&#31;17</span>
+              <img src="./img/x.png" alt="">
+          </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+  <script src="https://kit.fontawesome.com/58ac09fa66.js" crossorigin="anonymous"></script>
+</body>
+</html>

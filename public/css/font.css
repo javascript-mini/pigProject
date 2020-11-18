@@ -1,0 +1,41 @@
+/* 도현체 */
+@font-face {
+  font-family: 'dohyeon';
+  src: url(../font/BMDOHYEON_ttf.woff2) format('woff2'),
+    url(../font/BMDoHyeon.woff) format('woff');
+}
+
+/* 한나는열한살체 */
+@font-face {
+  font-family: 'hanna';
+  src: url(../font/BMHANNA_11yrs_ttf.woff2) format('woff2'),
+    url(../font/BMHANNA11yrsold.woff) format('woff');
+}
+
+/* 한나Air체 */
+@font-face {
+  font-family: 'hannaAir';
+  src: url(../font/BMHANNAAir_ttf.woff2) format('woff2'),
+    url(../font/BMHANNAAir.woff) format('woff');
+}
+
+/* 한나프로체 */
+@font-face {
+  font-family: 'hannaPro';
+  src: url(../font/BMHANNAPro.woff2) format('woff2'),
+    url(../font/BMHANNAPro.woff) format('woff');
+}
+
+/* 주아체 */
+@font-face {
+  font-family: 'jua';
+  src: url(../font/BMJUA_ttf.woff2) format('woff2'),
+    url(../font/BMJUA.woff) format('woff');
+}
+
+/* 연성체 */
+@font-face {
+  font-family: 'yeonsung';
+  src: url(../font/BMYEONSUNG_ttf.woff2) format('woff2'),
+    url(../font/BMYEONSUNG.woff) format('woff');
+}

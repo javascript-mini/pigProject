@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입 | 돼지의 민족</title>
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/join.css" />
+    <!-- JS Link -->
+    <script defer src="js/request.js"></script>
+    <script defer src="js/join.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="logo">
+        <img src="./img/돼민이.png" alt="돼지의 민족 로고" />
+      </h1>
+      <form class="join-form">
+        <fieldset>
+          <legend>회원가입 폼</legend>
+          <div class="input-box">
+            <label for="userId">아이디</label>
+            <input
+              class="input-text"
+              type="text"
+              id="userId"
+              autocomplete="off"
+            />
+            <em class="fail-id-msg"></em>
+          </div>
+          <div class="input-box">
+            <label for="userPw">비밀번호</label>
+            <input class="input-text" type="password" id="userPw" />
+            <em class="fail-pw-msg"></em>
+          </div>
+          <div class="input-box">
+            <label for="pwCheck">비밀번호 확인</label>
+            <input class="input-text" type="password" id="pwCheck" />
+            <em class="fail-pw-check-msg"></em>
+          </div>
+          <div class="input-box">
+            <label for="userNick">닉네임</label>
+            <input
+              class="input-text"
+              type="text"
+              id="userNick"
+              autocomplete="off"
+            />
+            <em class="fail-nick-msg"></em>
+          </div>
+          <button type="submit" class="btn-join">가입하기</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

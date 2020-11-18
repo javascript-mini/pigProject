@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 | 돼지의 민족</title>
+
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css" />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/login.css" />
+
+    <!-- JS Link -->
+    <script defer src="js/request.js"></script>
+    <script defer src="js/login.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="logo">
+        <img src="./img/돼민이.png" alt="돼지의 민족 로고" />
+      </h1>
+      <h2 class="login-heading a11y-hidden">로그인</h2>
+      <form class="login-form">
+        <fieldset>
+          <legend>회원 로그인 폼</legend>
+          <div class="input-box">
+            <input
+              class="input-text"
+              type="text"
+              id="userId"
+              autocomplete="off"
+              placeholder="아이디"
+            />
+            <em class="fail-id-msg"></em>
+          </div>
+          <div class="input-box">
+            <input
+              class="input-text"
+              type="password"
+              id="userPw"
+              placeholder="비밀번호"
+            />
+            <em class="fail-pw-msg"></em>
+          </div>
+          <button type="submit" class="btn-login">로그인</button>
+        </fieldset>
+      </form>
+      <ul class="member-only">
+        <li><a href="#">아이디 찾기</a></li>
+        <li><a href="#">비밀번호 찾기</a></li>
+      </ul>
+      <ul class="other-logins">
+        <li>
+          <a href="#"
+            ><span class="facebook-login"></span
+            ><span>페이스북으로 로그인</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><span class="naver-login"></span><span>네이버로 로그인</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><span class="apple-login"></span><span>Apple로 로그인</span></a
+          >
+        </li>
+      </ul>
+      <div class="join">
+        혹시, 돼지이신가요? <a class="join-link" href="/join">회원가입</a>
+      </div>
+    </div>
+  </body>
+</html>

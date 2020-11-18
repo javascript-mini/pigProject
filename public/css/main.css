@@ -1,0 +1,201 @@
+button {
+  padding: 0;
+  border: none;
+}
+input {
+  border: none;
+}
+.container {
+  font-family: 'hanna';
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.container {
+  overflow: hidden;
+}
+/* 주소 영역 */
+.address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+.address img {
+  width: 25px;
+}
+/* 광고 배너 */
+.ad {
+  position: relative;
+  width: 510px;
+  height: 180px;
+  border-bottom: 1px solid #000;
+}
+.ad-item-container {
+  display: flex;
+  width: 510px;
+  height: 100%;
+}
+.ad-item:not(:last-child) {
+  padding-right: 5px;
+}
+.ad img {
+  width: 510px;
+  height: 100%;
+}
+.ad-control {
+  width: 40px;
+  padding-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 35px;
+  color: #fff;
+  outline: none;
+}
+.prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* 메뉴 카테고리 */
+.menu-category ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+.menu-category li {
+  width: 33%;
+  flex-grow: 1;
+  text-align: center;
+}
+.menu-category li a {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 10px 0;
+}
+.menu-category img {
+  width: 70px;
+}
+/* 가게 검색 폼 */
+.search-store-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  flex-grow: 1;
+}
+#search-store {
+  width: 420px;
+  padding: 15px;
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+/* 메인 메뉴 */
+.main-menu {
+  position: sticky;
+  bottom: 0;
+  border-top: 1px solid #000;
+}
+.main-menu ul {
+  display: flex;
+}
+.main-menu ul li {
+  flex: 1 1 0;
+}
+.main-menu li:not(:last-child) {
+  border-right: 1px solid #000;
+}
+.main-menu a {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 5px 0;
+}
+.main-menu img {
+  width: 35px;
+  padding-bottom: 5px;
+}
+/* 주소 영역 */
+.map-wrap {
+  position: absolute;
+  top: 720px;
+  width: 510px;
+  height: 700px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+}
+.map-wrap h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.map-wrap form,
+.cur-position-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.map-wrap label {
+  display: flex;
+}
+#search-address {
+  width: 400px;
+  height: 46px;
+}
+.search-btn {
+  background-image: url(../img/검색.svg);
+  background-color: #f1efef;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.bd {
+  border: 1px solid #a4a4a4;
+  border-radius: 5px;
+  background-color: #f1efef;
+}
+.prev-btn {
+  display: block;
+  font-size: 30px;
+  width: 50px;
+  padding: 10px 10px;
+}
+.cur-position {
+  border-radius: 5px;
+  width: 461px;
+  height: 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: #f1efef;
+  font-size: 20px;
+  font-weight: 10px;
+}
+.recent-address {
+  font-size: 20px;
+}
+.recent-address h2 {
+  font-size: 25px;
+  margin-left: 30px;
+  margin-bottom: 35px;
+}
+.recent-address span:last-child {
+  display: block;
+  width: 450px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 3px solid #f1efef;
+}
+.recent-address span img {
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+  float: right;
+}

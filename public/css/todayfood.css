@@ -1,0 +1,95 @@
+li,
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'hanna';
+  position: relative;
+  overflow: hidden;
+}
+.today-food-wrap {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  height: 130px;
+  color: #fff;
+  background-color: #333;
+}
+.today-food {
+  font-size: 30px;
+  font-weight: 500;
+}
+.food-list-wrap {
+  height: 28px;
+  overflow: hidden;
+}
+/* 음식 gif 영역 */
+.food-gif-wrap {
+  flex-grow: 1;
+  width: 100%;
+}
+.food-gif-wrap figure {
+  width: 50%;
+}
+.food-gif-wrap img {
+  width: 100%;
+  height: 100%;
+}
+.ddug {
+  background-color: tomato;
+  height: 120px;
+  float: left;
+}
+.burger {
+  background-color: red;
+  height: 200px;
+  float: right;
+}
+.egg {
+  background-color: yellow;
+  float: left;
+  height: 200px;
+}
+.pizza {
+  background-color: yellowgreen;
+  height: 200px;
+  float: right;
+}
+.pork {
+  background-color: #aaa;
+  height: 190px;
+  float: left;
+}
+.spicynoodle {
+  background-color: #000;
+  height: 110px;
+  float: right;
+}
+/* 메인 메뉴 */
+.main-menu {
+  position: sticky;
+  bottom: 0;
+  border-top: 1px solid #000;
+}
+.main-menu ul {
+  display: flex;
+}
+.main-menu ul li {
+  flex: 1 1 0;
+}
+.main-menu li:not(:last-child) {
+  border-right: 1px solid #000;
+}
+.main-menu a {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 5px 0;
+}
+.main-menu img {
+  width: 35px;
+  padding-bottom: 5px;
+}

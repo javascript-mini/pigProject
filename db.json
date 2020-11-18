@@ -1,0 +1,1696 @@
+{
+  "users": [
+    {
+      "id": "test12",
+      "pw": "12345",
+      "nickname": "테스트용",
+      "address": "경기도 고양시 일산동구",
+      "beforeAddress": [
+        "서울시 동작구 울라동"
+      ],
+      "favorite": [],
+      "orderList": []
+    },
+    {
+      "id": "test2",
+      "pw": "123456",
+      "nickname": "테스트용2",
+      "address": "서울시 종로구 별똥동",
+      "beforeAddress": [
+        "서울시 종로구 별똥동",
+        "서울시 을지로구 견우동"
+      ],
+      "favorite": [],
+      "orderList": []
+    }
+  ],
+  "stores": [
+    {
+      "id": "1",
+      "category": "패스트푸드",
+      "storeName": "명랑핫도그 성수카페거리점",
+      "storeImg": "명랑핫도그.jpeg",
+      "minPrice": 3000,
+      "deliveryTime": 30,
+      "deliveryTip": 2000,
+      "storeStar": 4,
+      "tel": "031-962-6607",
+      "menu": [
+        {
+          "foodName": "치즈폭탄 세트",
+          "foodPrice": 12300,
+          "foodImage": "명랑핫도그-치즈폭탄세트.jpg"
+        },
+        {
+          "foodName": "따따블 치즈 핫도그",
+          "foodPrice": 2700,
+          "foodImage": "명랑핫도그-따따블치즈핫도그.jpg"
+        },
+        {
+          "foodName": "감자 통 모짜 핫도그",
+          "foodPrice": 2500,
+          "foodImage": "명랑핫도그-감자통모짜핫도그.jpg"
+        },
+        {
+          "foodName": "고구마 통 모짜 핫도그",
+          "foodPrice": 2500,
+          "foodImage": "명랑핫도그-고구마통모짜핫도그.jpg"
+        },
+        {
+          "foodName": "모짜 맵구마 핫도그",
+          "foodPrice": 2300,
+          "foodImage": "명랑핫도그-모짜맵구마핫도그.jpg"
+        }
+      ],
+      "reviews": [
+        {
+          "reviewStar": 3,
+          "reviewTxt": "존맛탱",
+          "reviewDate": "2020-11-20",
+          "reviewUserId": "test"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "category": "패스트푸드",
+      "storeName": "써브웨이 성수점",
+      "storeImg": "써브웨이.jpg",
+      "minPrice": 5000,
+      "deliveryTime": 20,
+      "deliveryTip": 1500,
+      "storeStar": 3,
+      "tel": "031-966-4422",
+      "menu": [
+        {
+          "foodName": "이탈리안 비엠티",
+          "foodPrice": 7400,
+          "foodImage": "써브웨이-이탈리안비엠티.jpg"
+        },
+        {
+          "foodName": "에그마요",
+          "foodPrice": 6500,
+          "foodImage": "써브웨이-에그마요.jpg"
+        },
+        {
+          "foodName": "스테이크 & 치즈",
+          "foodPrice": 8700,
+          "foodImage": "써브웨이-스테이크치즈.jpg"
+        },
+        {
+          "foodName": "써브웨이 클럽",
+          "foodPrice": 7900,
+          "foodImage": "써브웨이-써브웨이클럽.jpg"
+        },
+        {
+          "foodName": "폴드포크 바베큐",
+          "foodPrice": 8100,
+          "foodImage": "써브웨이-폴드포크바베큐.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "3",
+      "category": "패스트푸드",
+      "storeName": "플라잉볼 에그팩토리",
+      "storeImg": "플라잉볼에그팩토리.png",
+      "minPrice": 12000,
+      "deliveryTime": 58,
+      "deliveryTip": 2000,
+      "storeStar": 0,
+      "tel": "02-962-3378",
+      "menu": [
+        {
+          "foodName": "시그니쳐번",
+          "foodPrice": 5500,
+          "foodImage": "플라잉볼에그팩토리-시그니쳐번.jpg"
+        },
+        {
+          "foodName": "클래식버거",
+          "foodPrice": 8500,
+          "foodImage": "플라잉볼에그팩토리-클래식버거.jpg"
+        },
+        {
+          "foodName": "마요치킨필라프",
+          "foodPrice": 12000,
+          "foodImage": "플라잉볼에그팩토리-마요치킨필라프.jpg"
+        },
+        {
+          "foodName": "에그보나라",
+          "foodPrice": 8500,
+          "foodImage": "플라잉볼에그팩토리-에그보나라.jpg"
+        },
+        {
+          "foodName": "순살 후라이드 치킨",
+          "foodPrice": 16000,
+          "foodImage": "플라잉볼에그팩토리-순살후라이드치킨.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "4",
+      "category": "패스트푸드",
+      "storeName": "롯데리아 성수역점",
+      "storeImg": "롯데리아.png",
+      "minPrice": 12000,
+      "deliveryTime": 27,
+      "deliveryTip": 0,
+      "storeStar": 0,
+      "tel": "02-967-1123",
+      "menu": [
+        {
+          "foodName": "밀리터리홈키트미트&미트",
+          "foodPrice": 7200,
+          "foodImage": "롯데리아-밀리터리홈키트미트&미트.jpg"
+        },
+        {
+          "foodName": "밀리터리홈키트새우&미트",
+          "foodPrice": 7200,
+          "foodImage": "롯데리아-밀리터리홈키트새우&미트.jpg"
+        },
+        {
+          "foodName": "밀리터리홈키트미트&미트세트",
+          "foodPrice": 9200,
+          "foodImage": "롯데리아-밀리터리홈키트미트&미트세트.jpg"
+        },
+        {
+          "foodName": "밀리터리홈키트새우&미트세트",
+          "foodPrice": 9500,
+          "foodImage": "롯데리아-밀리터리홈키트새우&미트세트.jpg"
+        },
+        {
+          "foodName": "폴더버거비프세트",
+          "foodPrice": 8600,
+          "foodImage": "롯데리아-폴더버거비프세트.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "5",
+      "category": "패스트푸드",
+      "storeName": "삐삣버거",
+      "storeImg": "삐삣버거.jpg",
+      "minPrice": 8900,
+      "deliveryTime": 47,
+      "deliveryTip": 2000,
+      "storeStar": 0,
+      "tel": "02-962-9666",
+      "menu": [
+        {
+          "foodName": "싱글팩",
+          "foodPrice": 11900,
+          "foodImage": "삐삣버거-싱글팩.jpg"
+        },
+        {
+          "foodName": "더블팩",
+          "foodPrice": 19900,
+          "foodImage": "삐삣버거-더블팩.jpg"
+        },
+        {
+          "foodName": "치즈버거",
+          "foodPrice": 6500,
+          "foodImage": "삐삣버거-치즈버거.jpg"
+        },
+        {
+          "foodName": "삐삣버거",
+          "foodPrice": 8500,
+          "foodImage": "삐삣버거-삐삣버거.jpg"
+        },
+        {
+          "foodName": "패티패티",
+          "foodPrice": 9500,
+          "foodImage": "삐삣버거-패티패티.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "6",
+      "category": "디저트",
+      "storeName": "이디야커피 건대역점",
+      "storeImg": "이디야커피.jpg",
+      "minPrice": 6000,
+      "deliveryTime": 47,
+      "deliveryTip": 1500,
+      "storeStar": 0,
+      "tel": "02-962-5555",
+      "menu": [
+        {
+          "foodName": "허니카라멜브레드 세트",
+          "foodPrice": 12000,
+          "foodImage": "이디야커피-허니카라멜브레드세트.jpg"
+        },
+        {
+          "foodName": "쌍화차",
+          "foodPrice": 3900,
+          "foodImage": "이디야커피-쌍화차.jpg"
+        },
+        {
+          "foodName": "디카인 콜드브루 아메리카노",
+          "foodPrice": 4000,
+          "foodImage": "이디야커피-디카인콜드브루아메리카노.jpg"
+        },
+        {
+          "foodName": "달고나 라떼",
+          "foodPrice": 3500,
+          "foodImage": "이디야커피-달고나라떼.jpg"
+        },
+        {
+          "foodName": "ICED 아인슈페너",
+          "foodPrice": 3700,
+          "foodImage": "이디야커피-ICED아인슈페너.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "7",
+      "category": "디저트",
+      "storeName": "인서트 insert",
+      "storeImg": "insert-coffee.jpeg",
+      "minPrice": 10000,
+      "deliveryTime": 53,
+      "deliveryTip": 2000,
+      "storeStar": 0,
+      "tel": "02-564-3214",
+      "menu": [
+        {
+          "foodName": "아인슈페너",
+          "foodPrice": 6000,
+          "foodImage": "인서트-아인슈페너.jpg"
+        },
+        {
+          "foodName": "그린티샷라떼",
+          "foodPrice": 6500,
+          "foodImage": "인서트-그린티샷라떼.jpg"
+        },
+        {
+          "foodName": "멜론크림소다",
+          "foodPrice": 6000,
+          "foodImage": "인서트-멜론크림소다.jpg"
+        },
+        {
+          "foodName": "크림브륄레팬케익",
+          "foodPrice": 8000,
+          "foodImage": "인서트-크림브륄레팬케익.jpg"
+        },
+        {
+          "foodName": "브리치즈구이",
+          "foodPrice": 9000,
+          "foodImage": "인서트-브리치즈구이.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "8",
+      "category": "디저트",
+      "storeName": "A&5 WAFFLE",
+      "storeImg": "A&5WAFFLE.jpg",
+      "minPrice": 8000,
+      "deliveryTime": 57,
+      "deliveryTip": 2500,
+      "storeStar": 0,
+      "tel": "02-700-8000",
+      "menu": [
+        {
+          "foodName": "플레인와플",
+          "foodPrice": 8500,
+          "foodImage": "에이와플-플레인와플.jpg"
+        },
+        {
+          "foodName": "플레인 크로플 1p",
+          "foodPrice": 5500,
+          "foodImage": "에이와플-플레인크로플1p.jpg"
+        },
+        {
+          "foodName": "블루베리 크림치즈 크로플 1p",
+          "foodPrice": 6800,
+          "foodImage": "에이와플-블루베리크림치즈크로플1p.jpg"
+        },
+        {
+          "foodName": "인절미크로플1p",
+          "foodPrice": 6500,
+          "foodImage": "에이와플-인절미크로플1p.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "9",
+      "category": "디저트",
+      "storeName": "경성 꽈배기 화양점",
+      "storeImg": "경성꽈배기.jpeg",
+      "minPrice": 8000,
+      "deliveryTime": 46,
+      "deliveryTip": 2000,
+      "storeStar": 0,
+      "tel": "02-555-2450",
+      "menu": [
+        {
+          "foodName": "찹쌀꽈배기",
+          "foodPrice": 2500,
+          "foodImage": "경성꽈배기-찹쌀꽈배기.jpg"
+        },
+        {
+          "foodName": "치즈볼",
+          "foodPrice": 1300,
+          "foodImage": "경성꽈배기-치즈볼.jpg"
+        },
+        {
+          "foodName": "핫도그",
+          "foodPrice": 1300,
+          "foodImage": "경성꽈배기-핫도그.jpg"
+        },
+        {
+          "foodName": "팥도넛츠",
+          "foodPrice": 1300,
+          "foodImage": "경성꽈배기-팥도넛츠.jpg"
+        },
+        {
+          "foodName": "감자고로케",
+          "foodPrice": 1300,
+          "foodImage": "경성꽈배기-감자고로케.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "10",
+      "category": "디저트",
+      "storeName": "단과자",
+      "storeImg": "단과자.jpg",
+      "minPrice": 9000,
+      "deliveryTime": 56,
+      "deliveryTip": 1000,
+      "storeStar": 0,
+      "tel": "02-897-9874",
+      "menu": [
+        {
+          "foodName": "아메리카노 + 스콘",
+          "foodPrice": 6000,
+          "foodImage": "단과자-아메리카노스콘.jpg"
+        },
+        {
+          "foodName": "산딸기 마카롱",
+          "foodPrice": 2500,
+          "foodImage": "단과자-산딸기마카롱.jpg"
+        },
+        {
+          "foodName": "아몬드 휘남쉬에",
+          "foodPrice": 1200,
+          "foodImage": "단과자-아몬드휘남쉬에.jpg"
+        },
+        {
+          "foodName": "히비스커스 레몬에이드",
+          "foodPrice": 5000,
+          "foodImage": "단과자-히비스커스레몬에이드.jpg"
+        },
+        {
+          "foodName": "산딸기라떼",
+          "foodPrice": 5000,
+          "foodImage": "단과자-산딸기라떼.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "11",
+      "category": "치킨",
+      "storeName": "푸라닭 자양점",
+      "storeImg": "푸라닭.jpg",
+      "minPrice": 15900,
+      "deliveryTime": 66,
+      "deliveryTip": 3000,
+      "storeStar": 0,
+      "tel": "02-234-1111",
+      "menu": [
+        {
+          "foodName": "제너럴 핫 치킨",
+          "foodPrice": 17900,
+          "foodImage": "푸라닭-제너럴핫치킨.jpg"
+        },
+        {
+          "foodName": "투움바 치킨",
+          "foodPrice": 18900,
+          "foodImage": "푸라닭-투움바치킨.jpg"
+        },
+        {
+          "foodName": "블랙알리오",
+          "foodPrice": 17900,
+          "foodImage": "푸라닭-블랙알리오.jpg"
+        },
+        {
+          "foodName": "고추마요 치킨",
+          "foodPrice": 17900,
+          "foodImage": "푸라닭-고추마요치킨.jpg"
+        },
+        {
+          "foodName": "푸라닭 치킨",
+          "foodPrice": 15900,
+          "foodImage": "푸라닭-푸라닭 치킨.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "12",
+      "category": "치킨",
+      "storeName": "임영웅의 티바두마리치킨 성수화양점",
+      "storeImg": "티바치킨.jpg",
+      "minPrice": 15000,
+      "deliveryTime": 31,
+      "deliveryTip": 1000,
+      "storeStar": 0,
+      "tel": "02-567-8967",
+      "menu": [
+        {
+          "foodName": "알마간(알싸한마늘간장)+후라이드",
+          "foodPrice": 22500,
+          "foodImage": "티바치킨-알마간(알싸한마늘간장)+후라이드.jpg"
+        },
+        {
+          "foodName": "고마간(고추마늘간장)+후라이드",
+          "foodPrice": 23500,
+          "foodImage": "티바치킨-고마간(고추마늘간장)+후라이드.jpg"
+        },
+        {
+          "foodName": "땡초갈릭+후라이드",
+          "foodPrice": 24500,
+          "foodImage": "티바치킨-땡초갈릭+후라이드.jpg"
+        },
+        {
+          "foodName": "알마간(알싸한마늘간장)",
+          "foodPrice": 16500,
+          "foodImage": "티바치킨-알마간(알싸한마늘간장).jpg"
+        },
+        {
+          "foodName": "고마간(고추마늘간장)",
+          "foodPrice": 16500,
+          "foodImage": "티바치킨-고마간(고추마늘간장).jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "13",
+      "category": "치킨",
+      "storeName": "청년치킨",
+      "storeImg": "청년치킨.jpg",
+      "minPrice": 10000,
+      "deliveryTime": 36,
+      "deliveryTip": 1000,
+      "storeStar": 0,
+      "tel": "02-123-1234",
+      "menu": [
+        {
+          "foodName": "청년 후라이드 바삭매콤",
+          "foodPrice": 15000,
+          "foodImage": "청년치킨-후라이드바삭매콤.jpg"
+        },
+        {
+          "foodName": "청년 양념치킨 달콤한~",
+          "foodPrice": 16000,
+          "foodImage": "청년치킨-양념치킨달콤한.jpg"
+        },
+        {
+          "foodName": "청년 매운양념치킨 달곰~ 화끈",
+          "foodPrice": 16000,
+          "foodImage": "청년치킨-매운양념치킨달콤화끈.jpg"
+        },
+        {
+          "foodName": "청년 간장치킨 마늘단짠~",
+          "foodPrice": 16000,
+          "foodImage": "청년치킨-간장치킨마늘단짠.jpg"
+        },
+        {
+          "foodName": "청년 뿌링치즈치킨 강추",
+          "foodPrice": 16000,
+          "foodImage": "청년치킨-뿌링치즈치킨.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "14",
+      "category": "치킨",
+      "storeName": "부어치킨 군자점",
+      "storeImg": "부어치킨.jpg",
+      "minPrice": 14000,
+      "deliveryTime": 46,
+      "deliveryTip": 2000,
+      "storeStar": 0,
+      "tel": "02-456-7899",
+      "menu": [
+        {
+          "foodName": "양념치킨+음료245ml+무",
+          "foodPrice": 15000,
+          "foodImage": "부어치킨-양념치킨+음료+무.jpg"
+        },
+        {
+          "foodName": "델리치킨+음료245ml+무",
+          "foodPrice": 15000,
+          "foodImage": "부어치킨-델리치킨+음료+무.jpg"
+        },
+        {
+          "foodName": "갈비만나치킨+음료245ml+무",
+          "foodPrice": 17000,
+          "foodImage": "부어치킨-갈비만나치킨+음료+무.jpg"
+        },
+        {
+          "foodName": "라이스매콤강정(순살)+음료245ml+무",
+          "foodPrice": 17000,
+          "foodImage": "부어치킨-라이스매콤강정+음료+무.jpg"
+        },
+        {
+          "foodName": "크리스피반+크리스피반+크리스피반",
+          "foodPrice": 21000,
+          "foodImage": "부어치킨-크리스피반+크리스피반+크리스피반.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "15",
+      "category": "치킨",
+      "storeName": "BBQ 성수점",
+      "storeImg": "BBQ.jpg",
+      "minPrice": 14900,
+      "deliveryTime": 50,
+      "deliveryTip": 3000,
+      "storeStar": 0,
+      "tel": "02-999-7878",
+      "menu": [
+        {
+          "foodName": "핫 황금올리브 레드착착",
+          "foodPrice": 19000,
+          "foodImage": "bbq-핫황금올리브레드착착.jpg"
+        },
+        {
+          "foodName": "핫 황금 올리브 블랙페퍼",
+          "foodPrice": 19000,
+          "foodImage": "bbq-핫황금올리브블랙페퍼.jpg"
+        },
+        {
+          "foodName": "핫 황금올리브 짠킹소스",
+          "foodPrice": 20000,
+          "foodImage": "bbq-핫황금올리브짠킹소스.jpg"
+        },
+        {
+          "foodName": "메이플버터갈릭6개",
+          "foodPrice": 19900,
+          "foodImage": "bbq-메이플버터갈릭6개.jpg"
+        },
+        {
+          "foodName": "메이플2개+황올반+볼4개랜덤",
+          "foodPrice": 19900,
+          "foodImage": "bbq-메이플황올반볼.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "16",
+      "category": "피자",
+      "storeName": "59쌀피자",
+      "storeImg": "59쌀피자로고.png",
+      "minPrice": 17000,
+      "deliveryTime": 60,
+      "deliveryTip": 3500,
+      "storeStar": 0,
+      "tel": "031-123-3456",
+      "menu": [
+        {
+          "foodName": "불고기 새우 피자",
+          "foodPrice": 18900,
+          "foodImage": "59쌀-불고기새우피자.png"
+        },
+        {
+          "foodName": "더블 바베큐 피자",
+          "foodPrice": 18900,
+          "foodImage": "59쌀-더블바베큐피자.png"
+        },
+        {
+          "foodName": "베이컨 포테이토 골드 피자",
+          "foodPrice": 18900,
+          "foodImage": "59쌀-베이컨포테이토골드피자.png"
+        },
+        {
+          "foodName": "통 감자 새우 피자",
+          "foodPrice": 18900,
+          "foodImage": "59쌀-통감자새우피자.png"
+        },
+        {
+          "foodName": "스위트 골드 피자",
+          "foodPrice": 11900,
+          "foodImage": "59쌀-스위트골드피자.png"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "17",
+      "category": "피자",
+      "storeName": "반올림 피자샵",
+      "storeImg": "반올림로고.jpg",
+      "minPrice": 15900,
+      "deliveryTime": 65,
+      "deliveryTip": 3500,
+      "storeStar": 0,
+      "tel": "031-966-9688",
+      "menu": [
+        {
+          "foodName": "더블 포크 쉬림프 콘치즈",
+          "foodPrice": 20900,
+          "foodImage": "반올림-더블포크쉬림프콘치즈.png"
+        },
+        {
+          "foodName": "불벅 치즈링",
+          "foodPrice": 19900,
+          "foodImage": "반올림-불벅치즈링.png"
+        },
+        {
+          "foodName": "고스트 페파로니",
+          "foodPrice": 15900,
+          "foodImage": "반올림-고스트페파로니.png"
+        },
+        {
+          "foodName": "고구마 골드",
+          "foodPrice": 19900,
+          "foodImage": "반올림-고구마골드.png"
+        },
+        {
+          "foodName": "포텐 피자",
+          "foodPrice": 23900,
+          "foodImage": "반올림-포텐피자.png"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "18",
+      "category": "피자",
+      "storeName": "도미노 피자",
+      "storeImg": "도미노피자 로고.png",
+      "minPrice": 30000,
+      "deliveryTime": 45,
+      "deliveryTip": 3500,
+      "storeStar": 0,
+      "tel": "031-966-9688",
+      "menu": [
+        {
+          "foodName": "스타 셰프 시그니처",
+          "foodPrice": 36900,
+          "foodImage": "도미노-스타셰프시그니처.jpg"
+        },
+        {
+          "foodName": "스타 셰프 트러플 바질",
+          "foodPrice": 36900,
+          "foodImage": "도미노-스타셰프트러플바질.jpg"
+        },
+        {
+          "foodName": "글로벌 레전드 4",
+          "foodPrice": 35900,
+          "foodImage": "도미노-글로벌레전드4.jpg"
+        },
+        {
+          "foodName": "치즈케이크 블랙 타이거",
+          "foodPrice": 35900,
+          "foodImage": "도미노-치즈케이크블랙타이거.jpg"
+        },
+        {
+          "foodName": "블랙 앵거스 스테이크",
+          "foodPrice": 34900,
+          "foodImage": "도미노-블랙앵거스스테이크.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "19",
+      "category": "피자",
+      "storeName": "피자헛",
+      "storeImg": "피자헛로고.png",
+      "minPrice": 14900,
+      "deliveryTime": 30,
+      "deliveryTip": 3000,
+      "storeStar": 0,
+      "tel": "031-666-1234",
+      "menu": [
+        {
+          "foodName": "하와이안 & 페퍼로니",
+          "foodPrice": 14900,
+          "foodImage": "피자헛-하와이안페퍼로니.png"
+        },
+        {
+          "foodName": "직화 불고기 & 쉬림프 치즈 포켓",
+          "foodPrice": 28720,
+          "foodImage": "피자헛-직화불고기쉬림프치즈포켓.png"
+        },
+        {
+          "foodName": "티본 스테이크 & 쉬림프 리치골드",
+          "foodPrice": 28720,
+          "foodImage": "피자헛-티본스테이크쉬림프리치골드.png"
+        },
+        {
+          "foodName": "얼티밋 치즈 포켓",
+          "foodPrice": 28720,
+          "foodImage": "피자헛-얼티밋치즈포켓.png"
+        },
+        {
+          "foodName": "이탈리안 살시챠",
+          "foodPrice": 28720,
+          "foodImage": "피자헛-이탈리안살시챠.png"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "20",
+      "category": "피자",
+      "storeName": "피자탑",
+      "storeImg": "피자탑로고.png",
+      "minPrice": 17900,
+      "deliveryTime": 55,
+      "deliveryTip": 2500,
+      "storeStar": 0,
+      "tel": "031-966-9874",
+      "menu": [
+        {
+          "foodName": "스윗베이컨고구마피자",
+          "foodPrice": 18900,
+          "foodImage": "피자탑-스윗베이컨고구마피자.jpg"
+        },
+        {
+          "foodName": "고소 포테이토",
+          "foodPrice": 18900,
+          "foodImage": "피자탑-고소포테이토.jpg"
+        },
+        {
+          "foodName": "탑 콤비네이션",
+          "foodPrice": 17900,
+          "foodImage": "피자탑-탑콤비네이션.jpg"
+        },
+        {
+          "foodName": "통치즈크러스트 페퍼로니 피자",
+          "foodPrice": 22900,
+          "foodImage": "피자탑-롱치즈크러스트페퍼로니피자.jpg"
+        },
+        {
+          "foodName": "더블치즈 폭탄 피자",
+          "foodPrice": 17900,
+          "foodImage": "피자탑-더블치즈폭탄피자.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "21",
+      "category": "분식",
+      "storeName": "동대문 엽기 떡볶이",
+      "storeImg": "엽기떡볶이로고.jpg",
+      "minPrice": 14000,
+      "deliveryTime": 20,
+      "deliveryTip": 1000,
+      "storeStar": 0,
+      "tel": "031-967-8181",
+      "menu": [
+        {
+          "foodName": "A set",
+          "foodPrice": 17000,
+          "foodImage": "엽떡-A세트.png"
+        },
+        {
+          "foodName": "B set",
+          "foodPrice": 19000,
+          "foodImage": "엽떡-B세트.png"
+        },
+        {
+          "foodName": "엽기떡볶이",
+          "foodPrice": 14000,
+          "foodImage": "엽떡-엽기떡볶이.png"
+        },
+        {
+          "foodName": "엽기오뎅",
+          "foodPrice": 14000,
+          "foodImage": "엽떡-엽기오뎅.png"
+        },
+        {
+          "foodName": "엽기닭볶음탕",
+          "foodPrice": 24000,
+          "foodImage": "엽떡-엽기닭볶음탕.png"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "22",
+      "category": "분식",
+      "storeName": "스쿨 푸드",
+      "storeImg": "스쿨푸드로고.jpeg",
+      "minPrice": 8500,
+      "deliveryTime": 20,
+      "deliveryTip": 1000,
+      "storeStar": 0,
+      "tel": "031-967-6688",
+      "menu": [
+        {
+          "foodName": "떡순이 모둠",
+          "foodPrice": 12000,
+          "foodImage": "스쿨푸드-떡순이모둠.jpg"
+        },
+        {
+          "foodName": "모짜렐라 스팸 계란말이",
+          "foodPrice": 8500,
+          "foodImage": "스쿨푸드-모짜렐라스팸계란말이.jpg"
+        },
+        {
+          "foodName": "스페셜 말이",
+          "foodPrice": 8500,
+          "foodImage": "스쿨푸드-스페셜말이.jpg"
+        },
+        {
+          "foodName": "돼지목살김치찜",
+          "foodPrice": 9000,
+          "foodImage": "스쿨푸드-돼지목살김치찜.jpg"
+        },
+        {
+          "foodName": "매운 까르보나라 파스타 떡볶이",
+          "foodPrice": 24000,
+          "foodImage": "스쿨푸드-매운까르보나라파스타떡볶이.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "23",
+      "category": "분식",
+      "storeName": "신전 떡볶이",
+      "storeImg": "신전떡볶이로고.png",
+      "minPrice": 4500,
+      "deliveryTime": 20,
+      "deliveryTip": 1000,
+      "storeStar": 0,
+      "tel": "031-654-6544",
+      "menu": [
+        {
+          "foodName": "떡볶이",
+          "foodPrice": 4500,
+          "foodImage": "신전-떡볶이.png"
+        },
+        {
+          "foodName": "치즈떡볶이",
+          "foodPrice": 4500,
+          "foodImage": "스쿨푸드-모짜렐라스팸계란말이.jpg"
+        },
+        {
+          "foodName": "어묵튀김",
+          "foodPrice": 5000,
+          "foodImage": "신전-어묵튀김.png"
+        },
+        {
+          "foodName": "김말이튀김",
+          "foodPrice": 9000,
+          "foodImage": "신전-김말이튀김.png"
+        },
+        {
+          "foodName": "치킨텐더",
+          "foodPrice": 2000,
+          "foodImage": "신전-치킨텐더.png"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "24",
+      "category": "분식",
+      "storeName": "두끼 떡볶이",
+      "storeImg": "두끼로고.png",
+      "minPrice": 4500,
+      "deliveryTime": 20,
+      "deliveryTip": 1000,
+      "storeStar": 0,
+      "tel": "031-444-4444",
+      "menu": [
+        {
+          "foodName": "두끼떡볶이",
+          "foodPrice": 4500,
+          "foodImage": "두끼-두끼떡볶이.png"
+        },
+        {
+          "foodName": "로제 떡볶이",
+          "foodPrice": 4500,
+          "foodImage": "두끼-로제떡볶이.png"
+        },
+        {
+          "foodName": "두끼 치떡 세트",
+          "foodPrice": 5000,
+          "foodImage": "두끼-두끼치떡세트.png"
+        },
+        {
+          "foodName": "두끼 떡튀 세트",
+          "foodPrice": 9000,
+          "foodImage": "두끼-두끼떡튀세트.png"
+        },
+        {
+          "foodName": "두끼 순살 치킨",
+          "foodPrice": 2000,
+          "foodImage": "두끼-두끼순살치킨.png"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "25",
+      "category": "분식",
+      "storeName": "죠스떡볶이",
+      "storeImg": "죠스떡볶이로고.png",
+      "minPrice": 6000,
+      "deliveryTime": 20,
+      "deliveryTip": 2000,
+      "storeStar": 0,
+      "tel": "031-111-1111",
+      "menu": [
+        {
+          "foodName": "죠스떡볶이",
+          "foodPrice": 4500,
+          "foodImage": "죠스-죠스떡볶이.png"
+        },
+        {
+          "foodName": "치즈떡볶이",
+          "foodPrice": 4500,
+          "foodImage": "죠스-치즈떡볶이.png"
+        },
+        {
+          "foodName": "로제크림떡볶이",
+          "foodPrice": 5000,
+          "foodImage": "죠스-로제크림떡볶이.png"
+        },
+        {
+          "foodName": "국물떡볶이",
+          "foodPrice": 9000,
+          "foodImage": "죠스-국물떡볶이.png"
+        },
+        {
+          "foodName": "수제튀김",
+          "foodPrice": 2000,
+          "foodImage": "죠스-수제튀김.png"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "26",
+      "category": "안주",
+      "storeName": "곱창고",
+      "storeImg": "곱창고로고.png",
+      "minPrice": 6000,
+      "deliveryTime": 50,
+      "deliveryTip": 2500,
+      "storeStar": 0,
+      "tel": "031-333-3322",
+      "menu": [
+        {
+          "foodName": "곱창 모듬 구이",
+          "foodPrice": 6000,
+          "foodImage": "곱창고-곱창모듬구이.jpg"
+        },
+        {
+          "foodName": "특양 모듬 구이",
+          "foodPrice": 6000,
+          "foodImage": "곱창고-특양모듬구이.jpg"
+        },
+        {
+          "foodName": "곱창구이",
+          "foodPrice": 5000,
+          "foodImage": "곱창고-곱창구이.jpg"
+        },
+        {
+          "foodName": "대창구이",
+          "foodPrice": 9000,
+          "foodImage": "곱창고-대창구이.jpg"
+        },
+        {
+          "foodName": "막창구이",
+          "foodPrice": 9000,
+          "foodImage": "곱창고-막창구이.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "27",
+      "category": "안주",
+      "storeName": "대한곱창",
+      "storeImg": "대한곱창로고.jpeg",
+      "minPrice": 10000,
+      "deliveryTime": 60,
+      "deliveryTip": 3000,
+      "storeStar": 0,
+      "tel": "02-234-5895",
+      "menu": [
+        {
+          "foodName": "소대창",
+          "foodPrice": 10000,
+          "foodImage": "대한곱창-소대창.jpg"
+        },
+        {
+          "foodName": "곱창뚝배기전골",
+          "foodPrice": 6000,
+          "foodImage": "대한곱창-곱창뚝배기전골.jpg"
+        },
+        {
+          "foodName": "깍두기볶음밥",
+          "foodPrice": 8000,
+          "foodImage": "대한곱창-깍두기볶음밥.jpg"
+        },
+        {
+          "foodName": "김치말이국수",
+          "foodPrice": 9000,
+          "foodImage": "대한곱창-김치말이국수.jpg"
+        },
+        {
+          "foodName": "김치 비빔국수",
+          "foodPrice": 9000,
+          "foodImage": "대한곱창-김치비빔국수.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "28",
+      "category": "안주",
+      "storeName": "족발야시장",
+      "storeImg": "족발야시장로고.jpg",
+      "minPrice": 20000,
+      "deliveryTime": 60,
+      "deliveryTip": 3000,
+      "storeStar": 0,
+      "tel": "02-234-5895",
+      "menu": [
+        {
+          "foodName": "오리지널 족발",
+          "foodPrice": 10000,
+          "foodImage": "족발야시장-오리지널족발.jpg"
+        },
+        {
+          "foodName": "냉채족발",
+          "foodPrice": 20000,
+          "foodImage": "족발야시장-냉채족발.jpg"
+        },
+        {
+          "foodName": "직화불족발",
+          "foodPrice": 8000,
+          "foodImage": "족발야시장-직화불족발.jpg"
+        },
+        {
+          "foodName": "불족발꼬치",
+          "foodPrice": 9000,
+          "foodImage": "족발야시장-불족발꼬치.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "29",
+      "category": "안주",
+      "storeName": "앵그리불닭발",
+      "storeImg": "앵그리불닭발로고.jpeg",
+      "minPrice": 9000,
+      "deliveryTime": 50,
+      "deliveryTip": 3000,
+      "storeStar": 0,
+      "tel": "02-999-5656",
+      "menu": [
+        {
+          "foodName": "세트 1",
+          "foodPrice": 10000,
+          "foodImage": "앵그리불닭발-세트1.jpeg"
+        },
+        {
+          "foodName": "세트 2",
+          "foodPrice": 20000,
+          "foodImage": "앵그리불닭발-세트2.jpeg"
+        },
+        {
+          "foodName": "통뼈닭발",
+          "foodPrice": 8000,
+          "foodImage": "앵그리불닭발-통뼈닭발.jpg"
+        },
+        {
+          "foodName": "무뼈닭발",
+          "foodPrice": 9000,
+          "foodImage": "앵그리불닭발-무뼈닭발.jpeg"
+        },
+        {
+          "foodName": "마늘 소금똥집",
+          "foodPrice": 11000,
+          "foodImage": "앵그리불닭발-마늘소금똥집.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "30",
+      "category": "안주",
+      "storeName": "한신포차",
+      "storeImg": "한신포차로고.png",
+      "minPrice": 7000,
+      "deliveryTime": 50,
+      "deliveryTip": 3000,
+      "storeStar": 0,
+      "tel": "02-690-0985",
+      "menu": [
+        {
+          "foodName": "해물 모둠 볶음",
+          "foodPrice": 15000,
+          "foodImage": "한신-해물모둠볶음.jpg"
+        },
+        {
+          "foodName": "치즈돼지 고추장 바베큐",
+          "foodPrice": 16000,
+          "foodImage": "한신-치즈돼지고추장바베큐.jpg"
+        },
+        {
+          "foodName": "한신통닭",
+          "foodPrice": 12000,
+          "foodImage": "한신-한신통닭.jpg"
+        },
+        {
+          "foodName": "한신닭발",
+          "foodPrice": 17000,
+          "foodImage": "한신-한신닭발.jpg"
+        },
+        {
+          "foodName": "오돌뼈",
+          "foodPrice": 14000,
+          "foodImage": "한신-오돌뼈.jpg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "31",
+      "category": "한식",
+      "storeName": "유가네닭갈비 건대점",
+      "storeImg": "유가네닭갈비_건대점.png",
+      "minPrice": 6000,
+      "deliveryTime": 50,
+      "deliveryTip": 3000,
+      "storeStar": 0,
+      "tel": "02-587-4448",
+      "menu": [
+        {
+          "foodName": "닭갈비 세트",
+          "foodPrice": 15000,
+          "foodImage": "유가네닭갈비-닭갈비세트.jpeg"
+        },
+        {
+          "foodName": "닭갈비 1인분 세트",
+          "foodPrice": 16000,
+          "foodImage": "유가네닭갈비-닭갈비1인분세트.jpeg"
+        },
+        {
+          "foodName": "숯불 닭갈비",
+          "foodPrice": 12000,
+          "foodImage": "유가네닭갈비-숯불닭갈비.jpeg"
+        },
+        {
+          "foodName": "갈릭 닭갈비 철판 볶음밥",
+          "foodPrice": 17000,
+          "foodImage": "유가네닭갈비-갈릭닭갈비철판볶음밥.jpeg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "32",
+      "category": "한식",
+      "storeName": "백종원의 새마을 식당",
+      "storeImg": "새마을식당.jpg",
+      "minPrice": 7500,
+      "deliveryTime": 30,
+      "deliveryTip": 2000,
+      "storeStar": 0,
+      "tel": "02-969-9878",
+      "menu": [
+        {
+          "foodName": "열탄불고기세트_매운맛",
+          "foodPrice": 15000,
+          "foodImage": "새마을식당-열탄불고기세트_매운맛.jpeg"
+        },
+        {
+          "foodName": "열탄불고기세트_간장맛",
+          "foodPrice": 16000,
+          "foodImage": "새마을식당-열탄불고기세트_간장맛.jpeg"
+        },
+        {
+          "foodName": "직화목살세트",
+          "foodPrice": 12000,
+          "foodImage": "새마을식당-직화목살세트.jpeg"
+        },
+        {
+          "foodName": "직화삼겹세트",
+          "foodPrice": 17000,
+          "foodImage": "새마을식당-직화삼겹세트.jpeg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "33",
+      "category": "한식",
+      "storeName": "연안식당 성수역점",
+      "storeImg": "연안식당.jpg",
+      "minPrice": 7500,
+      "deliveryTime": 30,
+      "deliveryTip": 2000,
+      "storeStar": 0,
+      "tel": "02-336-7855",
+      "menu": [
+        {
+          "foodName": "꼬막 비빔밥",
+          "foodPrice": 15000,
+          "foodImage": "연안식당-꼬막비빔밥.jpeg"
+        },
+        {
+          "foodName": "해물뚝배기",
+          "foodPrice": 16000,
+          "foodImage": "연안식당-해물뚝배기.jpeg"
+        },
+        {
+          "foodName": "산해진미 해물탕",
+          "foodPrice": 12000,
+          "foodImage": "연안식당-산해진미해물탕.jpeg"
+        },
+        {
+          "foodName": "문어숙회",
+          "foodPrice": 17000,
+          "foodImage": "연안식당-문어숙회.jpeg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "34",
+      "category": "한식",
+      "storeName": "하남돼지집",
+      "storeImg": "하남돼지집.png",
+      "minPrice": 5500,
+      "deliveryTime": 30,
+      "deliveryTip": 2000,
+      "storeStar": 0,
+      "tel": "02-787-7648",
+      "menu": [
+        {
+          "foodName": "특별한판",
+          "foodPrice": 15000,
+          "foodImage": "하남돼지집-특별한판.jpeg"
+        },
+        {
+          "foodName": "모듬한판",
+          "foodPrice": 16000,
+          "foodImage": "하남돼지집-모듬한판.jpeg"
+        },
+        {
+          "foodName": "한돈 항정살",
+          "foodPrice": 12000,
+          "foodImage": "하남돼지집-한돈항정살.jpeg"
+        },
+        {
+          "foodName": "한돈 삼겹살",
+          "foodPrice": 17000,
+          "foodImage": "하남돼지집-한돈삼겹살.jpeg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "35",
+      "category": "한식",
+      "storeName": "곽만근갈비탕",
+      "storeImg": "곽만근갈비탕.png",
+      "minPrice": 5500,
+      "deliveryTime": 30,
+      "deliveryTip": 2000,
+      "storeStar": 0,
+      "tel": "02-908-0075",
+      "menu": [
+        {
+          "foodName": "갈비탕",
+          "foodPrice": 10000,
+          "foodImage": "곽만근갈비탕-갈비탕.jpeg"
+        },
+        {
+          "foodName": "얼큰 갈비탕",
+          "foodPrice": 13000,
+          "foodImage": "곽만근갈비탕-얼큰갈비탕.jpeg"
+        },
+        {
+          "foodName": "전복 갈비탕",
+          "foodPrice": 15000,
+          "foodImage": "곽만근갈비탕-전복갈비탕.jpeg"
+        },
+        {
+          "foodName": "매운 갈비찜",
+          "foodPrice": 15000,
+          "foodImage": "곽만근갈비탕-매운갈비찜.jpeg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "36",
+      "category": "중식",
+      "storeName": "전설의짬뽕",
+      "storeImg": "전설의짬뽕.png",
+      "minPrice": 5000,
+      "deliveryTime": 10,
+      "deliveryTip": 1500,
+      "storeStar": 0,
+      "tel": "02-907-0010",
+      "menu": [
+        {
+          "foodName": "깊고진한 차돌박이짬뽕",
+          "foodPrice": 10000,
+          "foodImage": "전설의짬뽕-깊고진한차돌박이짬뽕.jpg"
+        },
+        {
+          "foodName": "중독의맛 삼선짬뽕",
+          "foodPrice": 13000,
+          "foodImage": "전설의짬뽕-중독의맛삼선짬뽕.jpg"
+        },
+        {
+          "foodName": "시원한 홍합해물짬뽕",
+          "foodPrice": 15000,
+          "foodImage": "전설의짬뽕-시원한홍합해물짬뽕.jpg"
+        },
+        {
+          "foodName": "참쌀 탕수육",
+          "foodPrice": 15000,
+          "foodImage": "전설의짬뽕-참쌀탕수육.jpeg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "37",
+      "category": "중식",
+      "storeName": "명가 교동짬뽕",
+      "storeImg": "명가교동짬뽕.png",
+      "minPrice": 5000,
+      "deliveryTime": 10,
+      "deliveryTip": 1500,
+      "storeStar": 0,
+      "tel": "02-907-1234",
+      "menu": [
+        {
+          "foodName": "짬뽕",
+          "foodPrice": 6500,
+          "foodImage": "명가교동짬뽕-짬뽕.jpeg"
+        },
+        {
+          "foodName": "짜장면",
+          "foodPrice": 7000,
+          "foodImage": "명가교동짬뽕-짜장면.jpeg"
+        },
+        {
+          "foodName": "찹쌀탕수육",
+          "foodPrice": 10000,
+          "foodImage": "명가교동짬뽕-찹쌀탕수육.jpeg"
+        },
+        {
+          "foodName": "남작군만두",
+          "foodPrice": 8000,
+          "foodImage": "명가교동짬뽕-납작군만두.jpeg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "38",
+      "category": "중식",
+      "storeName": "착한짜장",
+      "storeImg": "착한짜장.jpeg",
+      "minPrice": 5000,
+      "deliveryTime": 20,
+      "deliveryTip": 2000,
+      "storeStar": 0,
+      "tel": "02-907-3254",
+      "menu": [
+        {
+          "foodName": "착한짜장면",
+          "foodPrice": 5000,
+          "foodImage": "착한짜장-착한짜장면.png"
+        },
+        {
+          "foodName": "해물쟁반짜장",
+          "foodPrice": 6000,
+          "foodImage": "착한짜장-해물쟁반짜장.jpg"
+        },
+        {
+          "foodName": "새우볶음밥",
+          "foodPrice": 6000,
+          "foodImage": "착한짜장-새우볶음밥.jpg"
+        },
+        {
+          "foodName": "탕수육",
+          "foodPrice": 7000,
+          "foodImage": "착한짜장-탕수육.jpeg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "39",
+      "category": "중식",
+      "storeName": "홍콩반점",
+      "storeImg": "홍콩반점.png",
+      "minPrice": 5000,
+      "deliveryTime": 20,
+      "deliveryTip": 2000,
+      "storeStar": 0,
+      "tel": "02-546-2354",
+      "menu": [
+        {
+          "foodName": "짜장면 + 탕수육",
+          "foodPrice": 10000,
+          "foodImage": "홍콩반점-짜장탕수육세트.jpeg"
+        },
+        {
+          "foodName": "짬뽕 + 탕수육",
+          "foodPrice": 6000,
+          "foodImage": "홍콩반점-짬뽕탕수육세트.jpeg"
+        },
+        {
+          "foodName": "고추짜장",
+          "foodPrice": 6000,
+          "foodImage": "홍콩반점-고추짜장.jpeg"
+        },
+        {
+          "foodName": "고추짬뽕",
+          "foodPrice": 7000,
+          "foodImage": "홍콩반점-고추짬뽕.jpeg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "40",
+      "category": "중식",
+      "storeName": "탕화 쿵푸 마라탕",
+      "storeImg": "탕화쿵푸마라탕.jpeg",
+      "minPrice": 8000,
+      "deliveryTime": 20,
+      "deliveryTip": 3000,
+      "storeStar": 0,
+      "tel": "031-998-8879",
+      "menu": [
+        {
+          "foodName": "셀프마라탕",
+          "foodPrice": 10000,
+          "foodImage": "탕화쿵푸마라탕-셀프마라탕.jpeg"
+        },
+        {
+          "foodName": "셀프 마라상궈",
+          "foodPrice": 10000,
+          "foodImage": "탕화쿵푸마라탕-셀프마라상궈.jpeg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "41",
+      "category": "일식",
+      "storeName": "소바식당",
+      "storeImg": "소바식당.jpg",
+      "minPrice": 6500,
+      "deliveryTime": 20,
+      "deliveryTip": 3000,
+      "storeStar": 0,
+      "tel": "031-789-7777",
+      "menu": [
+        {
+          "foodName": "한우사태 냉소바",
+          "foodPrice": 17000,
+          "foodImage": "소바식당-한우사태냉소바.jpeg"
+        },
+        {
+          "foodName": "냉소바",
+          "foodPrice": 9000,
+          "foodImage": "소바식당-냉소바.jpeg"
+        },
+        {
+          "foodName": "한우양지온반",
+          "foodPrice": 9000,
+          "foodImage": "소바식당-한우양지온반.jpeg"
+        },
+        {
+          "foodName": "게딱지장덮밥",
+          "foodPrice": 9000,
+          "foodImage": "소바식당-게딱지장덮밥.jpeg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "42",
+      "category": "일식",
+      "storeName": "건대연어덮밥",
+      "storeImg": "건대연어덮밥.jpg",
+      "minPrice": 6500,
+      "deliveryTime": 20,
+      "deliveryTip": 3000,
+      "storeStar": 0,
+      "tel": "031-808-4040",
+      "menu": [
+        {
+          "foodName": "연어덮밥",
+          "foodPrice": 12900,
+          "foodImage": "건대연어덮밥-연어덮밥.jpeg"
+        },
+        {
+          "foodName": "연어 모둠 초밥",
+          "foodPrice": 6500,
+          "foodImage": "건대연어덮밥-연어모둠초밥.jpeg"
+        },
+        {
+          "foodName": "연어 사시미",
+          "foodPrice": 21000,
+          "foodImage": "건대연어덮밥-연어사시미.jpeg"
+        },
+        {
+          "foodName": "수제 고로케",
+          "foodPrice": 7000,
+          "foodImage": "건대연어덮밥-수제고로케.jpeg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "43",
+      "category": "일식",
+      "storeName": "황제 참치",
+      "storeImg": "황제참치.jpg",
+      "minPrice": 6500,
+      "deliveryTime": 20,
+      "deliveryTip": 3000,
+      "storeStar": 0,
+      "tel": "031-962-7413",
+      "menu": [
+        {
+          "foodName": "참치회",
+          "foodPrice": 29000,
+          "foodImage": "황제참치-참치회.jpeg"
+        },
+        {
+          "foodName": "스페셜",
+          "foodPrice": 39000,
+          "foodImage": "황제참치-스페셜.jpeg"
+        },
+        {
+          "foodName": "실장님 스페셜",
+          "foodPrice": 50000,
+          "foodImage": "황제참치-실장님스페셜.jpeg"
+        },
+        {
+          "foodName": "황제 스페셜",
+          "foodPrice": 80000,
+          "foodImage": "황제참치-황제스페셜.jpeg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "44",
+      "category": "일식",
+      "storeName": "아오리라멘 건대점",
+      "storeImg": "아오리라멘.jpg",
+      "minPrice": 6500,
+      "deliveryTime": 20,
+      "deliveryTip": 3000,
+      "storeStar": 0,
+      "tel": "031-962-9635",
+      "menu": [
+        {
+          "foodName": "아오리 라멘",
+          "foodPrice": 8000,
+          "foodImage": "아오리라멘-아오리라멘.jpeg"
+        },
+        {
+          "foodName": "미소라멘",
+          "foodPrice": 9000,
+          "foodImage": "아오리라멘-미소라멘.jpeg"
+        },
+        {
+          "foodName": "마제맨",
+          "foodPrice": 10000,
+          "foodImage": "아오리라멘-마제맨.jpeg"
+        },
+        {
+          "foodName": "계란간장밥",
+          "foodPrice": 3000,
+          "foodImage": "아오리라멘-계란간장밥.jpeg"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "id": "45",
+      "category": "일식",
+      "storeName": "해만식당",
+      "storeImg": "해만식당.jpg",
+      "minPrice": 6500,
+      "deliveryTime": 20,
+      "deliveryTip": 3000,
+      "storeStar": 0,
+      "tel": "031-962-9635",
+      "menu": [
+        {
+          "foodName": "등심카츠",
+          "foodPrice": 11000,
+          "foodImage": "해만식당-등심카츠.jpeg"
+        },
+        {
+          "foodName": "안심카츠",
+          "foodPrice": 12000,
+          "foodImage": "해만식당-안심카츠.jpeg"
+        },
+        {
+          "foodName": "아나고동",
+          "foodPrice": 17000,
+          "foodImage": "해만식당-아나고동.jpeg"
+        },
+        {
+          "foodName": "소유사케동",
+          "foodPrice": 12000,
+          "foodImage": "해만식당-소유사케동.jpeg"
+        }
+      ],
+      "reviews": []
+    }
+  ]
+}
