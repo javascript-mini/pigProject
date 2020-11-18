@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리뷰작성 | 돼지의 민족</title>
+
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css" />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/review.css" />
+
+    <!-- JS Link -->
+    <script defer src="js/request.js"></script>
+    <script defer src="js/review.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <p class="q-text">식사는 어떠셨나요?</p>
+      <ul class="stars">
+        <li id="1" class="star empty-star"></li>
+        <li id="2" class="star empty-star"></li>
+        <li id="3" class="star empty-star"></li>
+        <li id="4" class="star empty-star"></li>
+        <li id="5" class="star empty-star"></li>
+      </ul>
+      <h2>리뷰 작성</h2>
+      <textarea class="input-review" placeholder="리뷰를 작성해주세요." rows="8" maxlength="50"></textarea>
+      <p class="fail-msg"></p>
+      <p class="number-of-letters"><span class="input-letters">0</span> / <span class="max-letters">50자</span></p>
+      <div class="wrap-btn">
+        <button class="btn-review">리뷰 등록</button>
+      </div>
+    </div>
+  </body>
+</html>

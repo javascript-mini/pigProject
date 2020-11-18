@@ -1,0 +1,209 @@
+.container {
+  font-family: 'yeonsung';
+}
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  border-bottom: 2px solid rgb(192, 192, 192);
+  background-color: #fff;
+}
+.prev-btn {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+}
+.cate-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'yeonsung';
+  visibility: hidden;
+}
+.fa-star {
+  color: rgb(246, 246, 0);
+}
+.store-info-box {
+  width: 400px;
+  margin: 0 auto 40px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgb(104, 104, 104);
+  text-align: center;
+}
+.store-name {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 900;
+}
+.store-info {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.store-info > i {
+  margin-right: 5px;
+}
+.store-btn {
+  display: flex;
+}
+.store-btn > button {
+  flex-grow: 1;
+  background-color: transparent;
+  border: 0;
+  border-right: 1px solid #000;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+.store-btn > button:last-child {
+  border-right: 0;
+}
+.store-btn > button > i {
+  margin-right: 5px;
+}
+.dib {
+  color: red;
+}
+.store-price-box {
+  width: 400px;
+  margin: 0 auto 40px;
+  padding: 30px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-size: 20px;
+}
+.store-price-box > p {
+  margin-bottom: 10px;
+}
+.store-price-box > p:last-child {
+  margin-bottom: 0;
+}
+.store-price-box > p > span {
+  display: inline-block;
+  width: 120px;
+}
+.store-change-btn {
+  display: flex;
+  width: 400px;
+  margin: 0 auto;
+}
+.store-change-btn > button {
+  flex-grow: 1;
+  padding: 10px 0;
+  background-color: transparent;
+  border: 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+  color: rgb(192, 192, 192);
+  outline: none;
+}
+.store-change-btn > button:last-child {
+  border-right: 0;
+}
+.store-change-btn > button.selected {
+  border-top: 3px solid #000;
+  border-bottom: 0;
+  color: #000;
+}
+.store-main {
+  width: 400px;
+  margin: 0 auto;
+}
+.menu-item {
+  display: flex;
+  padding: 15px 10px;
+  border-bottom: 1px solid #000;
+}
+.store-main > label:last-child > .menu-item:last-child {
+  border-bottom: 0;
+}
+.menu-item > input {
+  width: 15px;
+  height: 15px;
+}
+.menu-item > div {
+  flex-grow: 1;
+}
+.menu-item > img {
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.menu-name {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+.menu-price {
+  font-size: 18px;
+}
+.order-btn {
+  position: sticky;
+  left: 390px;
+  bottom: 15px;
+  border: 0;
+  width: 75px;
+  height: 75px;
+  background-color: #2ac1bc;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 900;
+  color: #eee;
+  cursor: pointer;
+}
+.order-btn > span {
+  display: block;
+}
+.review-title {
+  display: flex;
+  padding: 20px 15px;
+  border-bottom: 1px solid #000;
+}
+.review-title > span {
+  flex-grow: 1;
+  padding-top: 5px;
+  font-size: 20px;
+}
+.review-title > span > span {
+  display: inline-block;
+  margin-right: 10px;
+}
+.review-title > button {
+  border: 0;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: 'yeonsung';
+  cursor: pointer;
+}
+.review-item {
+  padding: 15px;
+  border-bottom: 1px solid #000;
+}
+.review-item:last-child {
+  border-bottom: 0;
+}
+.review-nick {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.review-date {
+  margin-bottom: 10px;
+}
+.review-date > span {
+  margin-right: 20px;
+}
+.review-txt {
+  font-size: 19px;
+  line-height: 1.5;
+}
