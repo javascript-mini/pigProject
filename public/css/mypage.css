@@ -1,0 +1,196 @@
+.container {
+  display: flex;
+  flex-flow: column;
+}
+.header h1,
+.order-header {
+  font-family:'dohyeon';
+  font-size: 22px;
+}
+
+.prev-btn {
+  display: block;
+  font-size: 30px;
+  width: 50px;
+  padding: 10px 10px;
+}
+
+/* 헤더 */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  min-height: 50px;
+  text-align: center;
+  border-bottom: 1px solid #000 ;
+}
+.header a {
+  position: absolute;
+  left: 0;
+}
+
+.user-render {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  height: 100%;
+  overflow: auto;
+}
+/* 회원 정보 변경 영역 */
+.user-info-change {
+  font-family: 'hanna';
+  font-size: 17px;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+
+}
+.user-info-change ul {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-info-change li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  /* background-color: pink; */
+}
+.user-info-change span {
+  /* display: inline-block; */
+  width: 65px;
+}
+.user-info-change button,
+.user-info-change input {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 0;
+  outline: none;
+}
+.user-info-change p {
+  display: inline-block;
+  width: 300px;
+}
+.user-info-change input {
+  width: 255px;
+  height: 30px;
+}
+.user-info-change input::placeholder {
+  padding-left: 10px;
+}
+.user-info-change .pw,
+.user-info-change .name {
+  margin-left: 5px;
+  background-color: #c0bebe;
+  color: #fff;
+  width: 40px;
+  height: 32px;
+  cursor: pointer;
+}
+.user-info-log {
+  position: absolute;
+  right: -132px;
+  bottom: -10px;
+  font-family: 'hannaAir';
+  font-size: 12px;
+}
+.user-info-log a:first-child {
+  padding-right: 10px;
+}
+.user-info-log a:last-child {
+  padding-left: 10px;
+}
+.user-info-change li >.err-msg-pw,
+.user-info-change li >.err-msg-name {
+  position: absolute;
+  display: block;
+  background-color: greenyellow;
+  left: 65px;
+  bottom: 3px;
+  width: 300px;
+  font-family: "hanna";
+  font-size: 15px;
+  color: red;
+}
+
+/* 주문 내역 */
+.order {
+  flex: 1 1 auto;
+  background-color: #eee;
+}
+.order-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid #000 ;
+  border-top: 1px solid #000;
+  background-color: #fff;
+}
+.order-list {
+  font-family: 'yeonsung';
+}
+.order-list li {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  border-bottom: 2px solid #ddd;
+  height: 100px;
+  margin: 7px 0;
+}
+.order-list span {
+  display: inline-block;
+  width: 380px;
+  border-bottom: 1px solid #ddd;
+}
+.order-list span:first-child {
+  font-family: 'jua';
+  font-size: 20px;
+}
+.order-list a {
+  font-family: 'jua';
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+}
+ 
+
+
+/* 메인 메뉴 */
+.main-menu {
+  position: sticky;
+  bottom: 0;
+  border-top: 1px solid #000;
+}
+.main-menu ul {
+  display: flex;
+}
+.main-menu ul li {
+  flex: 1 1 0;
+}
+.main-menu li:not(:last-child) {
+  border-right: 1px solid #000;
+}
+.main-menu a {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 5px 0;
+}
+.main-menu img {
+  width: 35px;
+  padding-bottom: 5px;
+}

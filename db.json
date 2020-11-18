@@ -1,15 +1,17 @@
 {
   "users": [
     {
-      "id": "test",
-      "pw": "1234",
+      "id": "test12",
+      "pw": "12345",
       "nickname": "테스트용",
       "address": "경기도 고양시 일산동구",
       "beforeAddress": [
         "경기도 고양시 일산동구",
         "서울시 동작구 울라동"
       ],
-      "favorite": [],
+      "favorite": [
+        "1"
+      ],
       "orderList": []
     },
     {
@@ -34,7 +36,7 @@
       "minPrice": 3000,
       "deliveryTime": 30,
       "deliveryTip": 2000,
-      "storeStar": 4,
+      "storeStar": "3.0",
       "tel": "031-962-6607",
       "menu": [
         {
@@ -65,10 +67,66 @@
       ],
       "reviews": [
         {
+          "reviewStar": 1,
+          "reviewTxt": "리뷰 테스트입니다다다다다다다다다다닫다다",
+          "reviewDate": "2020-11-18",
+          "reviewUserId": "test12",
+          "reviewStoreId": "1"
+        },
+        {
+          "reviewStar": 2,
+          "reviewTxt": "죽을거 같다아아ㅏ",
+          "reviewDate": "2020-11-18",
+          "reviewUserId": "test12",
+          "reviewStoreId": "1"
+        },
+        {
+          "reviewStar": 4,
+          "reviewTxt": "아아ㅏ아아아오",
+          "reviewDate": "2020-11-18",
+          "reviewUserId": "test12",
+          "reviewStoreId": "1"
+        },
+        {
+          "reviewStar": 4,
+          "reviewTxt": "맛있나요?",
+          "reviewDate": "2020-11-18",
+          "reviewUserId": "test12",
+          "reviewStoreId": "1"
+        },
+        {
+          "reviewStar": 2,
+          "reviewTxt": "d으ㅏ아으ㅏㅇㄹ",
+          "reviewDate": "2020-11-18",
+          "reviewUserId": "test12",
+          "reviewStoreId": "1"
+        },
+        {
+          "reviewStar": 5,
+          "reviewTxt": "1234",
+          "reviewDate": "2020-11-18",
+          "reviewUserId": "test12",
+          "reviewStoreId": "1"
+        },
+        {
+          "reviewStar": 1,
+          "reviewTxt": "맛 없어요",
+          "reviewDate": "2020-11-18",
+          "reviewUserId": "test12",
+          "reviewStoreId": "1"
+        },
+        {
           "reviewStar": 3,
-          "reviewTxt": "존맛탱",
-          "reviewDate": "2020-11-20",
-          "reviewUserId": "test",
+          "reviewTxt": "그저 그래요",
+          "reviewDate": "2020-11-18",
+          "reviewUserId": "test12",
+          "reviewStoreId": "1"
+        },
+        {
+          "reviewStar": 5,
+          "reviewTxt": "맛있어요!",
+          "reviewDate": "2020-11-18",
+          "reviewUserId": "test12",
           "reviewStoreId": "1"
         }
       ]

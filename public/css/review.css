@@ -10,7 +10,7 @@ h2 {
 
 .container {
   background-color: #fff;
-  background-image: url(../img/치킨.jpg);
+  background-image: url(../img/치킨.jpg);
   background-size: 60%;
   background-repeat: no-repeat;
   background-position-x: 0;
@@ -34,7 +34,6 @@ h2 {
   justify-content: space-between;
   width: 320px;
   margin: 20px auto;
-
 }
 .star {
   width: 50px;
@@ -83,7 +82,7 @@ h2 {
   float: right;
   border: 0;
   border-radius: 3px;
-  background-color: #2AC1BC;
+  background-color: #2ac1bc;
   color: #fff;
   font-size: 20px;
   cursor: pointer;

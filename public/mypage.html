@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>마이페이지 | 돼지의 민족</title>
+
+  <!-- font -->
+  <link rel="stylesheet" href="css/font.css" />
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/mypage.css" />
+
+  <!-- JS Link -->
+  <script defer src="js/request.js"></script>
+  <script defer src="js/mypage.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 헤더 영역 -->
+    <header class="header">
+      <h1>My page</h1>
+      <a href="#" class="prev-btn">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+    </header>
+
+    <!-- 회원 정보 변경 영역 -->
+    <div class="user-render">
+
+      <section class="user-info-change">
+        <h2 class="a11y-hidden">회원 정보 변경</h2>
+        <ul>
+          <li><span>아이디</span>
+            <p>zi존영서</p>
+          </li>
+          <li>
+            <span>비밀번호</span><input class="pw-input" type="text" placeholder="5 ~ 15자 이내로 입력하세요."><button class="pw">변경</button>
+            <span class="err-msg-pw">오류 메세지</span>
+          </li>
+          <li>
+            <span>닉네임</span><input class="name-input" type="text" placeholder="돼지"><button class="name">변경</button>
+            <span class="err-msg-name">오류 메세지</span>
+          </li>
+          <li class="user-info-log"><a class="logout" href="#">로그아웃</a>|<a class="leave" href="#">회원탈퇴</a></li>
+        </ul>
+      </section>
+
+      <!-- 주문 내역 -->
+      <section class="order">
+        <h2 class="order-header">주문 내역</h2>
+
+        <ul class="order-list">
+          <li>
+            <span>소문난 감자탕</span>
+            <span>감자탕 외 3개 18,000원</span>
+            <a href="#">가게보기</a>
+          </li>
+
+          <li>
+            <span>맥도날드</span>
+            <span>빅맥 외 2개 20,000원</span>
+            <a href="#">가게보기</a>
+          </li>
+
+          <li>
+            <span>롯데리아</span>
+            <span>아재버거 외 3개 24,000원</span>
+            <a href="#">가게보기</a>
+          </li>
+
+          <li>
+            <span>윤돈</span>
+            <span>치즈돈가스 외 1개 16,000원</span>
+            <a href="#">가게보기</a>
+          </li>
+
+        </ul>
+
+      </section>
+    </div>
+
+    <!-- 메인 메뉴 -->
+    <div class="main-menu">
+      <ul>
+        <li>
+          <a href="/">
+            <img src="./img/홈.png" alt="메인메뉴,홈버튼" />
+            홈
+          </a>
+        </li>
+        <li>
+          <a href="/todayfood">
+            <img src="./img/123.svg" alt="메인메뉴,뭐먹지 버튼" />
+            뭐 먹지?
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/가게상세-찜.png" alt="찜 버튼" />
+            찜한 가게
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/마이페이지.svg" alt="마이 페이지 버튼" />
+            My page
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+
+  </div>
+
+  <script src="https://kit.fontawesome.com/58ac09fa66.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
