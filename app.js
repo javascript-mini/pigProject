@@ -123,7 +123,17 @@ app.delete('/address/:idx', (req, res) => {
 app.get('/category/:cate', (req, res) => {
   const cate = req.params.cate;
 
-  let stores = db.get('stores').find({ category: userId }).value();
+  const stores = db.get('stores').value();
+
+  const cateStores = stores.filter(store => store.category === cate);
+
+  res.send(cateStores);
+});
+
+app.get('/category', (req, res) => {
+  if (!req.session.currentLogin) return res.redirect('/login');
+
+  res.sendFile(path.join(__dirname, 'public', 'category.html'));
 });
 
 app.listen('8080', () => {

@@ -1,8 +1,8 @@
 {
   "users": [
     {
-      "id": "test",
-      "pw": "1234",
+      "id": "test12",
+      "pw": "12345",
       "nickname": "테스트용",
       "address": "경기도 고양시 일산동구",
       "beforeAddress": [
