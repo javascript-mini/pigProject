@@ -120,6 +120,12 @@ app.delete('/address/:idx', (req, res) => {
   res.send(user.beforeAddress);
 });
 
+app.get('/category/:cate', (req, res) => {
+  const cate = req.params.cate;
+
+  let stores = db.get('stores').find({ category: userId }).value();
+});
+
 app.listen('8080', () => {
   console.log('Server is listening on http://localhost:8080');
 });
