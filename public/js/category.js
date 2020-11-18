@@ -50,7 +50,7 @@ const renderStores = async () => {
   stores.forEach(store => {
     html += `
     <li class="store-item">
-      <a href="/storeInfo?name=${store.id}">
+      <a href="/storeInfo?id=${store.id}">
         <img src="img/${store.storeImg}" alt="${store.storeName}" class="store-img" />
         <div class="store-description">
           <p class="store-name">${store.storeName}</p>

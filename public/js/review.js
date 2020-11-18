@@ -9,6 +9,20 @@ const $btnReview = document.querySelector('.btn-review');
 const today = new Date();
 let star = 0;
 
+const getUrlParams = () => {
+  var params = {};
+  window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (
+    str,
+    key,
+    value
+  ) {
+    params[key] = value;
+  });
+  return params;
+};
+
+const storeId = decodeURI(getUrlParams().id);
+
 $stars.onclick = e => {
   if (!e.target.matches('.star')) return;
   $failMsg.textContent = '';
@@ -22,6 +36,7 @@ $stars.onclick = e => {
     }
   });
 };
+
 $inputReview.onfocus = () => {
   $failMsg.textContent = '';
 };
@@ -44,20 +59,22 @@ $btnReview.onclick = async () => {
     $failMsg.textContent = '별점과 리뷰입력은 필수입니다.';
     return;
   }
+
   if (!$inputReview.value) {
     check = false;
     $failMsg.textContent = '별점과 리뷰입력은 필수입니다.';
     return;
   }
+
   if (check) {
-    await request.post('/store', {
+    await request.post(`/review/${storeId}`, {
       reviewStar: star,
       reviewTxt: $inputReview.value,
-      reviewDate: `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`,
-      reviewUserId: 'test',
-      reviewStoreId: '1'
+      reviewDate: `${today.getFullYear()}-${
+        today.getMonth() + 1
+      }-${today.getDate()}`,
     });
-  }
 
-  location.assign('main.html');
+    location.assign(`/storeInfo?id=${storeId}&review=true`);
+  }
 };

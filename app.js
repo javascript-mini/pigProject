@@ -39,7 +39,13 @@ app.get('/', (req, res) => {
 });
 
 app.get('/login', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'login.html'));
+  req.session.destroy(err => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.sendFile(path.join(__dirname, 'public', 'login.html'));
+    }
+  });
 });
 
 app.post('/login', (req, res) => {
@@ -134,6 +140,119 @@ app.get('/category', (req, res) => {
   if (!req.session.currentLogin) return res.redirect('/login');
 
   res.sendFile(path.join(__dirname, 'public', 'category.html'));
+});
+
+app.get('/storeInfo/:id', (req, res) => {
+  const storeId = req.params.id;
+  const store = db.get('stores').find({ id: storeId }).value();
+  const user = db
+    .get('users')
+    .find({ id: JSON.parse(req.session.currentLogin).userId })
+    .value();
+
+  userNicArr = [];
+  let reviewUser;
+  store.reviews.forEach(review => {
+    reviewUser = db.get('users').find({ id: review.reviewUserId }).value();
+
+    userNicArr.push(reviewUser.nickname);
+  });
+
+  res.send({ ...store, userFavorite: user.favorite, userNicArr });
+});
+
+app.get('/storeInfo', (req, res) => {
+  if (!req.session.currentLogin) return res.redirect('/login');
+
+  res.sendFile(path.join(__dirname, 'public', 'storeInfo.html'));
+});
+
+app.post('/dib', (req, res) => {
+  let user = db
+    .get('users')
+    .find({ id: JSON.parse(req.session.currentLogin).userId })
+    .value();
+
+  const findStore = user.favorite.find(
+    storeId => storeId === req.body.storeName
+  );
+
+  const favoriteArr = findStore
+    ? user.favorite.filter(storeId => storeId !== req.body.storeName)
+    : [...user.favorite, req.body.storeName];
+
+  user = db
+    .get('users')
+    .find({ id: JSON.parse(req.session.currentLogin).userId })
+    .assign({ favorite: favoriteArr })
+    .write();
+
+  res.send(favoriteArr);
+});
+
+app.post('/review/:id', (req, res) => {
+  const storeId = req.params.id;
+  const review = req.body;
+
+  const newReview = {
+    reviewStar: review.reviewStar,
+    reviewTxt: review.reviewTxt,
+    reviewDate: review.reviewDate,
+    reviewUserId: JSON.parse(req.session.currentLogin).userId,
+    reviewStoreId: storeId,
+  };
+
+  const store = db.get('stores').find({ id: storeId }).value();
+  const newReviewArr = [newReview, ...store.reviews];
+
+  console.log(newReviewArr[0].reviewStar);
+
+  const storeStar = newReviewArr.reduce((pre, cur, i, arr) => {
+    return i !== arr.length - 1
+      ? pre + cur.reviewStar
+      : (pre + cur.reviewStar) / arr.length;
+  }, 0);
+
+  db.get('stores')
+    .find({ id: storeId })
+    .assign({ reviews: newReviewArr })
+    .write();
+
+  db.get('stores')
+    .find({ id: storeId })
+    .assign({ storeStar: storeStar.toFixed(1) })
+    .write();
+
+  res.send({ review: true });
+});
+
+app.get('/review', (req, res) => {
+  if (!req.session.currentLogin) return res.redirect('/login');
+
+  res.sendFile(path.join(__dirname, 'public', 'review.html'));
+});
+
+app.patch('/users', (req, res) => {
+  const user = db
+    .get('users')
+    .find({ id: JSON.parse(req.session.currentLogin).userId })
+    .value();
+
+  const newData = req.body;
+
+  if (newData.inputKind === 'pw') {
+    db.get('stores')
+      .find({ id: JSON.parse(req.session.currentLogin).userId })
+      .assign({ pw: newData.pw })
+      .write();
+  } else {
+    db.get('stores')
+      .find({ id: JSON.parse(req.session.currentLogin).userId })
+      .assign({ nickname: newData.nickname })
+      .write();
+  }
+
+  res.send(true);
 });
 
 app.listen('8080', () => {
