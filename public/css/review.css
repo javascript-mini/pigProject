@@ -1,0 +1,90 @@
+body {
+  background-color: #bbb;
+}
+h2 {
+  font-size: 20px;
+  font-family: 'jua';
+  width: 350px;
+  margin: 30px auto 10px auto;
+}
+
+.container {
+  background-color: #fff;
+  background-image: url(../img/치킨.jpg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 110%;
+  margin: 0 auto;
+  padding: 40px;
+  z-index: 1;
+}
+
+.q-text {
+  font-family: 'hanna';
+  font-size: 35px;
+  margin: 10px auto;
+  width: 300px;
+  text-align: center;
+}
+
+.stars {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 320px;
+  margin: 20px auto;
+
+}
+.star {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+.empty-star {
+  background-image: url(../img/emptyStar.png);
+}
+
+.empty-star.full-star {
+  background-image: url(../img/fullStar.png);
+}
+
+.input-review {
+  font-size: 18px;
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+  resize: none;
+}
+.fail-msg {
+  font-family: 'hannaPro';
+  font-size: 18px;
+  color: rgb(231, 0, 0);
+  width: 350px;
+  height: 18px;
+  margin: 10px auto 0 auto;
+  text-align: left;
+}
+.number-of-letters {
+  width: 350px;
+  font-size: 17px;
+  margin: 0 auto 10px auto;
+  text-align: right;
+}
+.wrap-btn {
+  width: 350px;
+  margin: 30px auto;
+  background-color: pink;
+}
+.btn-review {
+  font-family: 'hanna';
+  width: 150px;
+  height: 40px;
+  float: right;
+  border: 0;
+  border-radius: 3px;
+  background-color: #2AC1BC;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
