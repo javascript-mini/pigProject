@@ -13,7 +13,7 @@ $joinForm.onsubmit = async e => {
   let check = true;
   const idReg = /^[A-Za-z0-9]{5,11}$/;
   const pwReg = /^[a-zA-Z0-9]{5,15}$/;
-  const nicReg = /^[ㄱ-ㅎ|가-힣|a-z|A-Z|0-9|\*]+$/;
+  const nicReg = /^[\wㄱ-ㅎㅏ-ㅣ가-힣]{2,20}$/;
   $failIdMsg.textContent = '';
   $failPwMsg.textContent = '';
   $failPwCheckMsg.textContent = '';
@@ -43,7 +43,7 @@ $joinForm.onsubmit = async e => {
     $failNickMsg.textContent = '필수 정보입니다.';
     check = false;
   } else if (!nicReg.test($inputNick.value)) {
-    $failNickMsg.textContent = '숫자와 영문자로 5~15자리 이내여야 합니다.';
+    $failNickMsg.textContent = '띄어쓰기와 특수문자를 제외한 2자 이상이어야 합니다.';
     check = false;
   }
   if (check) {
