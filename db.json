@@ -1,11 +1,12 @@
 {
   "users": [
     {
-      "id": "test12",
-      "pw": "12345",
+      "id": "test",
+      "pw": "1234",
       "nickname": "테스트용",
       "address": "경기도 고양시 일산동구",
       "beforeAddress": [
+        "경기도 고양시 일산동구",
         "서울시 동작구 울라동"
       ],
       "favorite": [],
@@ -27,7 +28,7 @@
   "stores": [
     {
       "id": "1",
-      "category": "패스트푸드",
+      "category": "fastfood",
       "storeName": "명랑핫도그 성수카페거리점",
       "storeImg": "명랑핫도그.jpeg",
       "minPrice": 3000,
@@ -67,13 +68,14 @@
           "reviewStar": 3,
           "reviewTxt": "존맛탱",
           "reviewDate": "2020-11-20",
-          "reviewUserId": "test"
+          "reviewUserId": "test",
+          "reviewStoreId": "1"
         }
       ]
     },
     {
       "id": "2",
-      "category": "패스트푸드",
+      "category": "fastfood",
       "storeName": "써브웨이 성수점",
       "storeImg": "써브웨이.jpg",
       "minPrice": 5000,
@@ -112,7 +114,7 @@
     },
     {
       "id": "3",
-      "category": "패스트푸드",
+      "category": "fastfood",
       "storeName": "플라잉볼 에그팩토리",
       "storeImg": "플라잉볼에그팩토리.png",
       "minPrice": 12000,
@@ -151,7 +153,7 @@
     },
     {
       "id": "4",
-      "category": "패스트푸드",
+      "category": "fastfood",
       "storeName": "롯데리아 성수역점",
       "storeImg": "롯데리아.png",
       "minPrice": 12000,
@@ -190,7 +192,7 @@
     },
     {
       "id": "5",
-      "category": "패스트푸드",
+      "category": "fastfood",
       "storeName": "삐삣버거",
       "storeImg": "삐삣버거.jpg",
       "minPrice": 8900,
@@ -229,7 +231,7 @@
     },
     {
       "id": "6",
-      "category": "디저트",
+      "category": "desirt",
       "storeName": "이디야커피 건대역점",
       "storeImg": "이디야커피.jpg",
       "minPrice": 6000,
@@ -268,7 +270,7 @@
     },
     {
       "id": "7",
-      "category": "디저트",
+      "category": "desirt",
       "storeName": "인서트 insert",
       "storeImg": "insert-coffee.jpeg",
       "minPrice": 10000,
@@ -307,7 +309,7 @@
     },
     {
       "id": "8",
-      "category": "디저트",
+      "category": "desirt",
       "storeName": "A&5 WAFFLE",
       "storeImg": "A&5WAFFLE.jpg",
       "minPrice": 8000,
@@ -341,7 +343,7 @@
     },
     {
       "id": "9",
-      "category": "디저트",
+      "category": "desirt",
       "storeName": "경성 꽈배기 화양점",
       "storeImg": "경성꽈배기.jpeg",
       "minPrice": 8000,
@@ -380,7 +382,7 @@
     },
     {
       "id": "10",
-      "category": "디저트",
+      "category": "desirt",
       "storeName": "단과자",
       "storeImg": "단과자.jpg",
       "minPrice": 9000,
@@ -419,7 +421,7 @@
     },
     {
       "id": "11",
-      "category": "치킨",
+      "category": "chicken",
       "storeName": "푸라닭 자양점",
       "storeImg": "푸라닭.jpg",
       "minPrice": 15900,
@@ -458,7 +460,7 @@
     },
     {
       "id": "12",
-      "category": "치킨",
+      "category": "chicken",
       "storeName": "임영웅의 티바두마리치킨 성수화양점",
       "storeImg": "티바치킨.jpg",
       "minPrice": 15000,
@@ -497,7 +499,7 @@
     },
     {
       "id": "13",
-      "category": "치킨",
+      "category": "chicken",
       "storeName": "청년치킨",
       "storeImg": "청년치킨.jpg",
       "minPrice": 10000,
@@ -536,7 +538,7 @@
     },
     {
       "id": "14",
-      "category": "치킨",
+      "category": "chicken",
       "storeName": "부어치킨 군자점",
       "storeImg": "부어치킨.jpg",
       "minPrice": 14000,
@@ -575,7 +577,7 @@
     },
     {
       "id": "15",
-      "category": "치킨",
+      "category": "chicken",
       "storeName": "BBQ 성수점",
       "storeImg": "BBQ.jpg",
       "minPrice": 14900,
@@ -614,7 +616,7 @@
     },
     {
       "id": "16",
-      "category": "피자",
+      "category": "pizza",
       "storeName": "59쌀피자",
       "storeImg": "59쌀피자로고.png",
       "minPrice": 17000,
@@ -653,7 +655,7 @@
     },
     {
       "id": "17",
-      "category": "피자",
+      "category": "pizza",
       "storeName": "반올림 피자샵",
       "storeImg": "반올림로고.jpg",
       "minPrice": 15900,
@@ -692,7 +694,7 @@
     },
     {
       "id": "18",
-      "category": "피자",
+      "category": "pizza",
       "storeName": "도미노 피자",
       "storeImg": "도미노피자 로고.png",
       "minPrice": 30000,
@@ -731,7 +733,7 @@
     },
     {
       "id": "19",
-      "category": "피자",
+      "category": "pizza",
       "storeName": "피자헛",
       "storeImg": "피자헛로고.png",
       "minPrice": 14900,
@@ -770,7 +772,7 @@
     },
     {
       "id": "20",
-      "category": "피자",
+      "category": "pizza",
       "storeName": "피자탑",
       "storeImg": "피자탑로고.png",
       "minPrice": 17900,
@@ -809,7 +811,7 @@
     },
     {
       "id": "21",
-      "category": "분식",
+      "category": "bunsic",
       "storeName": "동대문 엽기 떡볶이",
       "storeImg": "엽기떡볶이로고.jpg",
       "minPrice": 14000,
@@ -848,7 +850,7 @@
     },
     {
       "id": "22",
-      "category": "분식",
+      "category": "bunsic",
       "storeName": "스쿨 푸드",
       "storeImg": "스쿨푸드로고.jpeg",
       "minPrice": 8500,
@@ -887,7 +889,7 @@
     },
     {
       "id": "23",
-      "category": "분식",
+      "category": "bunsic",
       "storeName": "신전 떡볶이",
       "storeImg": "신전떡볶이로고.png",
       "minPrice": 4500,
@@ -926,7 +928,7 @@
     },
     {
       "id": "24",
-      "category": "분식",
+      "category": "bunsic",
       "storeName": "두끼 떡볶이",
       "storeImg": "두끼로고.png",
       "minPrice": 4500,
@@ -965,7 +967,7 @@
     },
     {
       "id": "25",
-      "category": "분식",
+      "category": "bunsic",
       "storeName": "죠스떡볶이",
       "storeImg": "죠스떡볶이로고.png",
       "minPrice": 6000,
@@ -1004,7 +1006,7 @@
     },
     {
       "id": "26",
-      "category": "안주",
+      "category": "anhu",
       "storeName": "곱창고",
       "storeImg": "곱창고로고.png",
       "minPrice": 6000,
@@ -1043,7 +1045,7 @@
     },
     {
       "id": "27",
-      "category": "안주",
+      "category": "anhu",
       "storeName": "대한곱창",
       "storeImg": "대한곱창로고.jpeg",
       "minPrice": 10000,
@@ -1082,7 +1084,7 @@
     },
     {
       "id": "28",
-      "category": "안주",
+      "category": "anhu",
       "storeName": "족발야시장",
       "storeImg": "족발야시장로고.jpg",
       "minPrice": 20000,
@@ -1116,7 +1118,7 @@
     },
     {
       "id": "29",
-      "category": "안주",
+      "category": "anhu",
       "storeName": "앵그리불닭발",
       "storeImg": "앵그리불닭발로고.jpeg",
       "minPrice": 9000,
@@ -1155,7 +1157,7 @@
     },
     {
       "id": "30",
-      "category": "안주",
+      "category": "anhu",
       "storeName": "한신포차",
       "storeImg": "한신포차로고.png",
       "minPrice": 7000,
@@ -1194,7 +1196,7 @@
     },
     {
       "id": "31",
-      "category": "한식",
+      "category": "hansic",
       "storeName": "유가네닭갈비 건대점",
       "storeImg": "유가네닭갈비_건대점.png",
       "minPrice": 6000,
@@ -1228,7 +1230,7 @@
     },
     {
       "id": "32",
-      "category": "한식",
+      "category": "hansic",
       "storeName": "백종원의 새마을 식당",
       "storeImg": "새마을식당.jpg",
       "minPrice": 7500,
@@ -1262,7 +1264,7 @@
     },
     {
       "id": "33",
-      "category": "한식",
+      "category": "hansic",
       "storeName": "연안식당 성수역점",
       "storeImg": "연안식당.jpg",
       "minPrice": 7500,
@@ -1296,7 +1298,7 @@
     },
     {
       "id": "34",
-      "category": "한식",
+      "category": "hansic",
       "storeName": "하남돼지집",
       "storeImg": "하남돼지집.png",
       "minPrice": 5500,
@@ -1330,7 +1332,7 @@
     },
     {
       "id": "35",
-      "category": "한식",
+      "category": "hansic",
       "storeName": "곽만근갈비탕",
       "storeImg": "곽만근갈비탕.png",
       "minPrice": 5500,
@@ -1364,7 +1366,7 @@
     },
     {
       "id": "36",
-      "category": "중식",
+      "category": "jungsic",
       "storeName": "전설의짬뽕",
       "storeImg": "전설의짬뽕.png",
       "minPrice": 5000,
@@ -1398,7 +1400,7 @@
     },
     {
       "id": "37",
-      "category": "중식",
+      "category": "jungsic",
       "storeName": "명가 교동짬뽕",
       "storeImg": "명가교동짬뽕.png",
       "minPrice": 5000,
@@ -1432,7 +1434,7 @@
     },
     {
       "id": "38",
-      "category": "중식",
+      "category": "jungsic",
       "storeName": "착한짜장",
       "storeImg": "착한짜장.jpeg",
       "minPrice": 5000,
@@ -1466,7 +1468,7 @@
     },
     {
       "id": "39",
-      "category": "중식",
+      "category": "jungsic",
       "storeName": "홍콩반점",
       "storeImg": "홍콩반점.png",
       "minPrice": 5000,
@@ -1500,7 +1502,7 @@
     },
     {
       "id": "40",
-      "category": "중식",
+      "category": "jungsic",
       "storeName": "탕화 쿵푸 마라탕",
       "storeImg": "탕화쿵푸마라탕.jpeg",
       "minPrice": 8000,
@@ -1524,7 +1526,7 @@
     },
     {
       "id": "41",
-      "category": "일식",
+      "category": "ilsic",
       "storeName": "소바식당",
       "storeImg": "소바식당.jpg",
       "minPrice": 6500,
@@ -1558,7 +1560,7 @@
     },
     {
       "id": "42",
-      "category": "일식",
+      "category": "ilsic",
       "storeName": "건대연어덮밥",
       "storeImg": "건대연어덮밥.jpg",
       "minPrice": 6500,
@@ -1592,7 +1594,7 @@
     },
     {
       "id": "43",
-      "category": "일식",
+      "category": "ilsic",
       "storeName": "황제 참치",
       "storeImg": "황제참치.jpg",
       "minPrice": 6500,
@@ -1626,7 +1628,7 @@
     },
     {
       "id": "44",
-      "category": "일식",
+      "category": "ilsic",
       "storeName": "아오리라멘 건대점",
       "storeImg": "아오리라멘.jpg",
       "minPrice": 6500,
@@ -1660,7 +1662,7 @@
     },
     {
       "id": "45",
-      "category": "일식",
+      "category": "ilsic",
       "storeName": "해만식당",
       "storeImg": "해만식당.jpg",
       "minPrice": 6500,
