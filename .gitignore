@@ -180,3 +180,6 @@ $RECYCLE.BIN/
 
 # ESlint
 .eslintrc.json
+
+# Database
+.db.json
