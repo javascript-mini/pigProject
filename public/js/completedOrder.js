@@ -1,28 +1,7 @@
 // server data
-const storeName = '소문난 감자탕';
-const ordersData = [
-  {
-    menuName: "게딱지장덮밥",
-    menuOrderPrice: "8000",
-    menuCount: "1"
-  },
-  {
-    menuName: "냉소바",
-    menuOrderPrice: "7000",
-    menuCount: "2"
-  },
-  {
-    menuName: "양지온면",
-    menuOrderPrice: "23000",
-    menuCount: "3"
-  },
-  {
-    menuName: "쫄면",
-    menuOrderPrice: "23000",
-    menuCount: "2"
-  }
-];
-const CountAndSumPrice = ["5", "23000"];
+const storeName = sessionStorage.getItem('sessionStoreName');
+const ordersData = JSON.parse(sessionStorage.getItem('ordersData'));
+const total = JSON.parse(sessionStorage.getItem('total'));
 
 // state
 const today = new Date();
@@ -35,7 +14,7 @@ const $orderLists = document.querySelector('.order-lists');
 const $orderPrice = document.querySelector('.order-price');
 
 // functions
-const renderOrderSum = () => `${ordersData[0].menuName} 외 ${CountAndSumPrice[0] - 1}개`;
+const renderOrderSum = () => `${ordersData[0].menuName} 외 ${total[0] - 1}개`;
 
 const renderOrderInfo = () => {
   $storeName.textContent = storeName;
@@ -57,7 +36,9 @@ const renderOrderLists = () => {
 };
 
 const renderOrderPrice = () => {
-  $orderPrice.textContent = `${(+CountAndSumPrice[1]).toLocaleString()} 원`;
+  console.log(total);
+  console.log(total);
+  $orderPrice.textContent = `${(+total[1]).toLocaleString()} 원`;
 };
 
 // add event handler

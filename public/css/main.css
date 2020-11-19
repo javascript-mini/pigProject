@@ -147,6 +147,7 @@ input {
 #search-address {
   width: 400px;
   height: 46px;
+  padding-left: 10px;
 }
 .search-btn {
   background-image: url(../img/검색.svg);
