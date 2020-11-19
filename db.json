@@ -25,6 +25,15 @@
       ],
       "favorite": [],
       "orderList": []
+    },
+    {
+      "id": "gmyong",
+      "pw": "rmadyd12",
+      "nickname": "gmyong",
+      "address": "",
+      "beforeAddress": [],
+      "favorite": [],
+      "orderList": []
     }
   ],
   "stores": [
@@ -36,7 +45,7 @@
       "minPrice": 3000,
       "deliveryTime": 30,
       "deliveryTip": 2000,
-      "storeStar": "3.3",
+      "storeStar": "3.4",
       "tel": "031-962-6607",
       "menu": [
         {
@@ -66,6 +75,13 @@
         }
       ],
       "reviews": [
+        {
+          "reviewStar": 5,
+          "reviewTxt": "너무너무 맛있어요요요요요!!!",
+          "reviewDate": "2020-11-19",
+          "reviewUserId": "gmyong",
+          "reviewStoreId": "1"
+        },
         {
           "reviewStar": 5,
           "reviewTxt": "ddddffffff",

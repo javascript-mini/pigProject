@@ -232,6 +232,15 @@ app.get('/review', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'review.html'));
 });
 
+app.get('/users', (req, res) => {
+  const user = db
+    .get('users')
+    .find({ id: JSON.parse(req.session.currentLogin).userId })
+    .value();
+
+  res.send(user);
+});
+
 app.patch('/users', (req, res) => {
   const user = db
     .get('users')

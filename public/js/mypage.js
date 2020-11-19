@@ -34,7 +34,9 @@ const orderRender = () => {
   userInfo.orderList.forEach(list => {
     html += `<li>
     <span>${list.myStoreName}</span>
-    <span>${list.myMenu.keys[0]} 외 ${list.myMenu.keys.length - 1} ${list.myPrice}원</span>
+    <span>${list.myMenu.keys[0]} 외 ${list.myMenu.keys.length - 1} ${
+      list.myPrice
+    }원</span>
     <a href="/storeInfo?id=${list.myStoreId}">가게보기</a>
   </li>`;
   });
