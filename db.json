@@ -10,7 +10,8 @@
         "서울시 동작구 울라동"
       ],
       "favorite": [
-        "1"
+        "1",
+        "6"
       ],
       "orderList": []
     },
@@ -25,6 +26,15 @@
       ],
       "favorite": [],
       "orderList": []
+    },
+    {
+      "id": "gmyong",
+      "pw": "rmadyd12",
+      "nickname": "gmyong",
+      "address": "",
+      "beforeAddress": [],
+      "favorite": [],
+      "orderList": []
     }
   ],
   "stores": [
@@ -36,7 +46,7 @@
       "minPrice": 3000,
       "deliveryTime": 30,
       "deliveryTip": 2000,
-      "storeStar": "3.2",
+      "storeStar": "3.4",
       "tel": "031-962-6607",
       "menu": [
         {
@@ -66,6 +76,27 @@
         }
       ],
       "reviews": [
+        {
+          "reviewStar": 5,
+          "reviewTxt": "너무너무 맛있어요요요요요!!!",
+          "reviewDate": "2020-11-19",
+          "reviewUserId": "gmyong",
+          "reviewStoreId": "1"
+        },
+        {
+          "reviewStar": 5,
+          "reviewTxt": "ddddffffff",
+          "reviewDate": "2020-11-19",
+          "reviewUserId": "test12",
+          "reviewStoreId": "1"
+        },
+        {
+          "reviewStar": 3,
+          "reviewTxt": "dddddddd",
+          "reviewDate": "2020-11-19",
+          "reviewUserId": "test12",
+          "reviewStoreId": "1"
+        },
         {
           "reviewStar": 4,
           "reviewTxt": "dsfsdf",
@@ -499,7 +530,7 @@
       "minPrice": 15900,
       "deliveryTime": 66,
       "deliveryTip": 3000,
-      "storeStar": 0,
+      "storeStar": "3.3",
       "tel": "02-234-1111",
       "menu": [
         {
@@ -528,7 +559,29 @@
           "foodImage": "푸라닭-푸라닭 치킨.jpg"
         }
       ],
-      "reviews": []
+      "reviews": [
+        {
+          "reviewStar": 4,
+          "reviewTxt": "hi",
+          "reviewDate": "2020-11-19",
+          "reviewUserId": "test12",
+          "reviewStoreId": "11"
+        },
+        {
+          "reviewStar": 3,
+          "reviewTxt": "ddddd",
+          "reviewDate": "2020-11-19",
+          "reviewUserId": "test12",
+          "reviewStoreId": "11"
+        },
+        {
+          "reviewStar": 3,
+          "reviewTxt": "치킨치킨치킨",
+          "reviewDate": "2020-11-19",
+          "reviewUserId": "test12",
+          "reviewStoreId": "11"
+        }
+      ]
     },
     {
       "id": "12",

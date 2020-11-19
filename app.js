@@ -232,12 +232,16 @@ app.get('/review', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'review.html'));
 });
 
-app.patch('/users', (req, res) => {
+app.get('/users', (req, res) => {
   const user = db
     .get('users')
     .find({ id: JSON.parse(req.session.currentLogin).userId })
     .value();
 
+  res.send(user);
+});
+
+app.patch('/users', (req, res) => {
   const newData = req.body;
 
   if (newData.inputKind === 'pw') {
@@ -259,6 +263,42 @@ app.get('/order', (req, res) => {
   if (!req.session.currentLogin) return res.redirect('/login');
 
   res.sendFile(path.join(__dirname, 'public', 'order.html'));
+});
+
+app.get('/dibList', (req, res) => {
+  if (!req.session.currentLogin) return res.redirect('/login');
+
+  res.sendFile(path.join(__dirname, 'public', 'dibList.html'));
+});
+
+app.get('/mypage', (req, res) => {
+  if (!req.session.currentLogin) return res.redirect('/login');
+
+  res.sendFile(path.join(__dirname, 'public', 'mypage.html'));
+});
+
+app.post('/checkId', (req, res) => {
+  const inputId = req.body.inputId;
+
+  let user = db.get('users').find({ id: inputId }).value();
+
+  if (user) return res.send({ check: false });
+
+  res.send({ check: true });
+});
+
+app.get('/dib', (req, res) => {
+  const user = db
+    .get('users')
+    .find({ id: JSON.parse(req.session.currentLogin).userId })
+    .value();
+
+  let stores = [];
+  user.favorite.forEach(storeId => {
+    stores.push(db.get('stores').find({ id: storeId }).value());
+  });
+
+  res.send(stores);
 });
 
 app.listen('8080', () => {

@@ -3,6 +3,7 @@ let user = {};
 
 const $container = document.querySelector('.container');
 const $prevBtn = document.getElementById('prevBtn');
+const $cateTitle = document.getElementById('cateTitle');
 const $storeInfoBox = document.querySelector('.store-info-box');
 const $storePriceBox = document.querySelector('.store-price-box');
 const $storeMain = document.querySelector('.store-main');
@@ -31,6 +32,8 @@ const storeId = decodeURI(getUrlParams().id);
 const renderStore = async () => {
   const res = await request.get(`/storeInfo/${storeId}`);
   store = await res.json();
+
+  $cateTitle.textContent = store.storeName;
 
   $storeInfoBox.innerHTML = `
     <h1 class="store-name">${store.storeName}</h1>
@@ -132,7 +135,7 @@ const renderStore = async () => {
       location.assign(`/review?id=${store.id}`);
     };
 
-    $container.scrollTo({ top: 450, left: 0, behavior: 'smooth' });
+    $container.scrollTo({ top: 435, left: 0, behavior: 'smooth' });
   }
 };
 
@@ -140,8 +143,16 @@ window.onload = () => {
   renderStore();
 };
 
+$container.addEventListener('scroll', () => {
+  if ($container.scrollTop > 10) {
+    $cateTitle.style.visibility = 'visible';
+  } else {
+    $cateTitle.style.visibility = 'hidden';
+  }
+});
+
 $prevBtn.onclick = () => {
-  location.replace(`/category?cate=${store.category}`);
+  window.history.back();
 };
 
 $storeChangeBtn.onclick = e => {
@@ -201,7 +212,7 @@ $storeChangeBtn.onclick = e => {
     $storeMain.innerHTML = html;
   }
 
-  $container.scrollTo({ top: 450, left: 0, behavior: 'smooth' });
+  $container.scrollTo({ top: 435, left: 0, behavior: 'smooth' });
 };
 
 $orderBtn.onclick = () => {
