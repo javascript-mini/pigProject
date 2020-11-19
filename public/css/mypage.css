@@ -8,13 +8,6 @@
   font-size: 22px;
 }
 
-.prev-btn {
-  display: block;
-  font-size: 30px;
-  width: 50px;
-  padding: 10px 10px;
-}
-
 /* 헤더 */
 .header {
   position: sticky;
@@ -171,6 +164,7 @@
 
 /* 메인 메뉴 */
 .main-menu {
+  font-family: 'hanna';
   position: sticky;
   bottom: 0;
   border-top: 1px solid #000;
