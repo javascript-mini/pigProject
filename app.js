@@ -255,6 +255,12 @@ app.patch('/users', (req, res) => {
   res.send(true);
 });
 
+app.get('/order', (req, res) => {
+  if (!req.session.currentLogin) return res.redirect('/login');
+
+  res.sendFile(path.join(__dirname, 'public', 'order.html'));
+});
+
 app.listen('8080', () => {
   console.log('Server is listening on http://localhost:8080');
 });

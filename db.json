@@ -36,7 +36,7 @@
       "minPrice": 3000,
       "deliveryTime": 30,
       "deliveryTip": 2000,
-      "storeStar": "3.0",
+      "storeStar": "3.2",
       "tel": "031-962-6607",
       "menu": [
         {
@@ -66,6 +66,20 @@
         }
       ],
       "reviews": [
+        {
+          "reviewStar": 4,
+          "reviewTxt": "dsfsdf",
+          "reviewDate": "2020-11-19",
+          "reviewUserId": "test12",
+          "reviewStoreId": "1"
+        },
+        {
+          "reviewStar": 4,
+          "reviewTxt": "dddd",
+          "reviewDate": "2020-11-19",
+          "reviewUserId": "test12",
+          "reviewStoreId": "1"
+        },
         {
           "reviewStar": 1,
           "reviewTxt": "리뷰 테스트입니다다다다다다다다다다닫다다",

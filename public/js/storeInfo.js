@@ -8,6 +8,7 @@ const $storePriceBox = document.querySelector('.store-price-box');
 const $storeMain = document.querySelector('.store-main');
 const $storeChangeBtn = document.querySelector('.store-change-btn');
 const $orderBtn = document.querySelector('.order-btn');
+let $checkInputs;
 
 let $telBtn;
 let $dibBtn;
@@ -77,13 +78,14 @@ const renderStore = async () => {
   `;
 
   let html = '';
-  console.log(getUrlParams().review);
   if (!getUrlParams().review) {
-    store.menu.forEach((li, idx) => {
+    store.menu.forEach((li, i) => {
       html += `
-      <label for="${idx + 1}">
+      <label for="${i + 1}">
         <div class="menu-item">
-          <input type="checkbox" id="${idx + 1}" value="${li.foodName}" />
+          <input type="checkbox" id="${i + 1}" class="check-input" value="${
+        li.foodName
+      }" />
           <div>
             <p class="menu-name">${li.foodName}</p>
             <p class="menu-price">${li.foodPrice}원</p>
@@ -94,6 +96,7 @@ const renderStore = async () => {
       `;
     });
     $storeMain.innerHTML = html;
+    $checkInputs = document.querySelectorAll('.check-input');
   } else {
     html = `
       <div class="review-title">
@@ -129,7 +132,7 @@ const renderStore = async () => {
       location.assign(`/review?id=${store.id}`);
     };
 
-    $container.scrollTo({ top: 430, left: 0, behavior: 'smooth' });
+    $container.scrollTo({ top: 450, left: 0, behavior: 'smooth' });
   }
 };
 
@@ -182,7 +185,9 @@ $storeChangeBtn.onclick = e => {
       html += `
       <label for="${i + 1}">
         <div class="menu-item">
-          <input type="checkbox" id="${i + 1}" value="${li.foodName}" />
+          <input type="checkbox" id="${i + 1}" class="check-input" value="${
+        li.foodName
+      }" />
           <div>
             <p class="menu-name">${li.foodName}</p>
             <p class="menu-price">${li.foodPrice}원</p>
@@ -196,5 +201,33 @@ $storeChangeBtn.onclick = e => {
     $storeMain.innerHTML = html;
   }
 
-  $container.scrollTo({ top: 430, left: 0, behavior: 'smooth' });
+  $container.scrollTo({ top: 450, left: 0, behavior: 'smooth' });
+};
+
+$orderBtn.onclick = () => {
+  const checkedInputs = [...$checkInputs].filter(
+    checkInput => checkInput.checked === true
+  );
+
+  const menuNames = checkedInputs.map(
+    input => input.nextElementSibling.firstElementChild.textContent
+  );
+
+  const oreder = [];
+
+  store.menu.forEach(menuItem => {
+    if (menuNames.indexOf(menuItem.foodName) === -1) return;
+
+    const orderItem = {
+      menuName: menuItem.foodName,
+      menuPrice: menuItem.foodPrice,
+      menuImg: menuItem.foodImage,
+    };
+
+    oreder.push(orderItem);
+  });
+
+  sessionStorage.setItem('sessionStoreName', store.storeName);
+  sessionStorage.setItem('orderList', JSON.stringify(oreder));
+  location.assign('/order');
 };
