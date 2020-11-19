@@ -261,6 +261,18 @@ app.get('/order', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'order.html'));
 });
 
+app.get('/dibList', (req, res) => {
+  if (!req.session.currentLogin) return res.redirect('/login');
+
+  res.sendFile(path.join(__dirname, 'public', 'dibList.html'));
+});
+
+app.get('/mypage', (req, res) => {
+  if (!req.session.currentLogin) return res.redirect('/login');
+
+  res.sendFile(path.join(__dirname, 'public', 'mypage.html'));
+});
+
 app.listen('8080', () => {
   console.log('Server is listening on http://localhost:8080');
 });
