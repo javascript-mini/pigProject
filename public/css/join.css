@@ -1,8 +1,8 @@
 body {
-  background-color: #bbb;
+  background-color: #ccc;
 }
 .container {
-  background-color: #eee;
+  background-color: #fff;
   margin: 0 auto;
   padding: 40px 40px 10px 40px;
 }
@@ -13,7 +13,7 @@ body {
 .logo img {
   width: 100%;
 }
-form {
+.join-form {
   width: 300px;
   margin: 30px auto;
 }
@@ -32,11 +32,19 @@ label {
 }
 .input-text {
   display: inline-block;
+  background-color: rgb(245, 245, 245);
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
+  border-top: 2px solid #eee;
+  border-right: 2px solid rgb(240, 240, 240);
+  border-bottom: 2px solid rgb(245, 245, 245);
+  border-left: 2px solid rgb(245, 245, 245);
+  border-radius: 2px solid #ddd;
   font-size: 17px;
   outline-style: none;
+}
+.input-text:focus-visible {
+  border: 2px solid #2ac1bc;
 }
 .fail-id-msg,
 .fail-pw-msg,

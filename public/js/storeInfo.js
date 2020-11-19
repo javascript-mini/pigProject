@@ -239,6 +239,7 @@ $orderBtn.onclick = () => {
   });
 
   sessionStorage.setItem('sessionStoreName', store.storeName);
+  sessionStorage.setItem('sessionStoreId', store.id);
   sessionStorage.setItem('orderList', JSON.stringify(oreder));
   location.assign('/order');
 };

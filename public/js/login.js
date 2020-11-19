@@ -19,12 +19,15 @@ $loginForm.onsubmit = async e => {
   if (!$inputId.value.trim()) {
     $failIdMsg.textContent = '아이디를 입력해주세요.';
     check = false;
+    return;
   } else if (!idReg.test($inputId.value)) {
     $failIdMsg.textContent = '아이디는 5~12자 이내여야 합니다.';
     check = false;
+    return;
   }
 
   if (!$inputPw.value.trim()) {
+    $inputPw.focus();
     $failPwMsg.textContent = '비밀번호를 입력해주세요.';
     check = false;
   } else if (!pwReg.test($inputPw.value)) {
@@ -45,4 +48,8 @@ $loginForm.onsubmit = async e => {
       location.assign('/');
     }
   }
+};
+
+window.onload = () => {
+  $inputId.focus();
 };

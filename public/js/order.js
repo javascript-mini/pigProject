@@ -1,3 +1,4 @@
+
 // state
 const storeNameFromServer = sessionStorage.getItem('sessionStoreName');
 const orderDataFromServer = JSON.parse(sessionStorage.getItem('orderList'));
@@ -144,6 +145,36 @@ $prevBtn.onclick = () => {
   window.history.back();
 };
 
-// document.querySelector('.order-btn').onclick => e => {
-//   fetch()
-// }
+document.querySelector('.order-btn').onclick = async () => {
+  const orderMenu = [];
+  const $menuNames = document.querySelectorAll('.menu-name');
+  const $menuPrices = document.querySelectorAll('.menu-price');
+  const $menuCounts = document.querySelectorAll('.count');
+  const $totalPrice = document.getElementById('totalPrice');
+
+  [...$menuNames].forEach((_, i) => {
+    const menuItem = {
+      menuName: $menuNames[i].textContent,
+      menuOrderPrice: $menuPrices[i].textContent,
+      menuCount: $menuCounts[i].textContent
+    };
+    orderMenu.push(menuItem);
+  });
+
+  sessionStorage.removeItem('orderList');
+  sessionStorage.setItem('ordersData', JSON.stringify(orderMenu));
+  sessionStorage.setItem('total', JSON.stringify([$listCount.textContent, $totalPrice.textContent.substring(0, $totalPrice.textContent.length - 2)]));
+
+  const storeId = sessionStorage.getItem('sessionStoreId');
+  const today = new Date();
+
+  request.post('/orderList', {
+    myStoreId: storeId,
+    myStoreName: storeNameFromServer,
+    myMenu: orderMenu,
+    myPrice: $totalPrice.textContent.substring(0, $totalPrice.textContent.length - 2),
+    myDate: `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`
+  });
+
+  location.assign('/completed');
+};

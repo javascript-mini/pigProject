@@ -36,6 +36,9 @@ form {
   font-size: 17px;
   outline-style: none;
 }
+.input-text:focus-visible {
+  border-bottom: 2px g;
+}
 .fail-id-msg,
 .fail-pw-msg {
   position: absolute;
@@ -58,6 +61,7 @@ form {
   color: #fff;
   font-size: 20px;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .member-only {
@@ -69,7 +73,9 @@ form {
   margin: 0 auto;
   color: #888;
 }
-
+.member-only li a:hover {
+  color:  #2ac1bc;
+}
 .member-only li:first-child::after {
   content: '|';
   margin: 0 15px;
@@ -91,6 +97,9 @@ form {
   border: 1px solid black;
   border-radius: 3px;
   transition: background 0.3s, color 0.3s;
+}
+.other-logins li:hover {
+  border: 1px solid #2ac1bc;
 }
 .other-logins li a {
   /* display: block; */

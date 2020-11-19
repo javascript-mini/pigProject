@@ -80,7 +80,7 @@ app.post('/join', (req, res) => {
   const newUser = {
     id: joinInfo.inputId,
     pw: joinInfo.inputPw,
-    nickname: joinInfo.inputId,
+    nickname: joinInfo.inputNickname,
     address: '',
     beforeAddress: [],
     favorite: [],
@@ -299,6 +299,28 @@ app.get('/dib', (req, res) => {
   });
 
   res.send(stores);
+});
+
+app.get('/completed', (req, res) => {
+  if (!req.session.currentLogin) return res.redirect('/login');
+
+  res.sendFile(path.join(__dirname, 'public', 'completedOrder.html'));
+});
+
+app.post('/orderList', (req, res) => {
+  const orderMenu = req.body;
+  const user = db
+    .get('users')
+    .find({ id: JSON.parse(req.session.currentLogin).userId })
+    .value();
+
+  db
+    .get('users')
+    .find({ id: JSON.parse(req.session.currentLogin).userId })
+    .assign({ orderList: [orderMenu, ...user.orderList] })
+    .write();
+    
+  res.send();
 });
 
 app.listen('8080', () => {
