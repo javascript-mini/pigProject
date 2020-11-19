@@ -64,12 +64,13 @@ const render = () => {
           inputKind: 'pw',
           pw: $pwInput.value,
         });
+
+        location.assign('/login');
       }
       $pwInput.value = '';
     }
     if (e.target.matches('.user-info-change .name')) {
       let check = true;
-      // console.log(e.target);
       const nicReg = /^[\wㄱ-ㅎㅏ-ㅣ가-힣]{2,20}$/;
       $errMsgPw.textContent = '';
       $errMsgName.textContent = '';
@@ -85,31 +86,45 @@ const render = () => {
           inputKind: 'nickname',
           nickname: $nameInput.value,
         });
+        $nameInput.placeholder = $nameInput.value;
         $nameInput.value = '';
       }
     }
   };
 
   // 로그아웃
-  $logout.onclick = async () => {
-    const res = await request.get('/login');
+  $logout.onclick = () => {
+    location.assign('/login');
   };
+
   // 회원 탈퇴
   $leave.onclick = async () => {
-    let result = confirm('정말 탈퇴하시겠습니까?');
-    if (result) {
-      const res = await request.delete('/leave');
-    }
+    const popup = document.querySelector('.popup');
+    popup.style.display = 'flex';
+
+    document.getElementById('yesBtn').onclick = async () => {
+      await request.delete('/leave');
+      location.assign('/login');
+    };
+
+    document.getElementById('noBtn').onclick = () => {
+      popup.style.display = 'none';
+    };
   };
 };
+
 const orderRender = () => {
   let html = '';
+  console.log(userInfo.orderList);
+
   userInfo.orderList.forEach(list => {
+    console.log(list.myMenu);
     html += `<li>
     <span>${list.myStoreName}</span>
-    <span>${list.myMenu.keys[0]} 외 ${list.myMenu.keys.length - 1} ${
-      list.myPrice
-    }원</span>
+    <span><span>${list.myMenu[0].menuName} ${
+      list.myMenu.length - 1 ? `외 ${list.myMenu.length - 1}개` : ''
+    } </span>
+    ${list.myPrice}원</span>
     <a href="/storeInfo?id=${list.myStoreId}">가게보기</a>
   </li>`;
   });

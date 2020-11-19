@@ -94,6 +94,7 @@ $inputNick.onblur = () => {
 };
 
 window.onload = () => {
+  sessionStorage.clear();
   $inputId.focus();
 };
 

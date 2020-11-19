@@ -51,5 +51,6 @@ $loginForm.onsubmit = async e => {
 };
 
 window.onload = () => {
+  sessionStorage.clear();
   $inputId.focus();
 };

@@ -245,15 +245,20 @@ app.patch('/users', (req, res) => {
   const newData = req.body;
 
   if (newData.inputKind === 'pw') {
-    db.get('stores')
+    db.get('users')
       .find({ id: JSON.parse(req.session.currentLogin).userId })
       .assign({ pw: newData.pw })
       .write();
   } else {
-    db.get('stores')
+    db.get('users')
       .find({ id: JSON.parse(req.session.currentLogin).userId })
       .assign({ nickname: newData.nickname })
       .write();
+
+    req.session.currentLogin = JSON.stringify({
+      userId: JSON.parse(req.session.currentLogin).userId,
+      userNickname: newData.nickname,
+    });
   }
 
   res.send(true);
@@ -314,12 +319,19 @@ app.post('/orderList', (req, res) => {
     .find({ id: JSON.parse(req.session.currentLogin).userId })
     .value();
 
-  db
-    .get('users')
+  db.get('users')
     .find({ id: JSON.parse(req.session.currentLogin).userId })
     .assign({ orderList: [orderMenu, ...user.orderList] })
     .write();
-    
+
+  res.send();
+});
+
+app.delete('/leave', (req, res) => {
+  db.get('users')
+    .remove({ id: JSON.parse(req.session.currentLogin).userId })
+    .write();
+
   res.send();
 });
 
