@@ -50,6 +50,7 @@ const render = () => {
       let check = true;
       const pwReg = /^[a-zA-Z0-9]{5,15}$/;
       $errMsgPw.textContent = '';
+      $errMsgName.textContent = '';
       console.log($pwInput.value);
       if (!$pwInput.value.trim()) {
         $errMsgPw.textContent = '필수 정보입니다.';
@@ -61,12 +62,13 @@ const render = () => {
       if (check) {
         const res = await request.patch(`/users`, {
           inputKind: 'pw',
-          pw: $pwInput.value
+          pw: $pwInput.value,
         });
       }
       $pwInput.value = '';
     }
     if (e.target.matches('.user-info-change .name')) {
+      let check = true;
       // console.log(e.target);
       const nicReg = /^[\wㄱ-ㅎㅏ-ㅣ가-힣]{2,20}$/;
       $errMsgPw.textContent = '';
@@ -81,7 +83,7 @@ const render = () => {
       if (check) {
         const res = await request.patch('/users', {
           inputKind: 'nickname',
-          nickname: $nameInput.value
+          nickname: $nameInput.value,
         });
         $nameInput.value = '';
       }
@@ -105,7 +107,9 @@ const orderRender = () => {
   userInfo.orderList.forEach(list => {
     html += `<li>
     <span>${list.myStoreName}</span>
-    <span>${list.myMenu.keys[0]} 외 ${list.myMenu.keys.length - 1} ${list.myPrice}원</span>
+    <span>${list.myMenu.keys[0]} 외 ${list.myMenu.keys.length - 1} ${
+      list.myPrice
+    }원</span>
     <a href="/storeInfo?id=${list.myStoreId}">가게보기</a>
   </li>`;
   });
