@@ -1,4 +1,3 @@
-
 // state
 const storeNameFromServer = sessionStorage.getItem('sessionStoreName');
 const orderDataFromServer = JSON.parse(sessionStorage.getItem('orderList'));

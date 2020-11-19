@@ -29,7 +29,7 @@ input {
   position: relative;
   width: 510px;
   height: 180px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ddd;
 }
 .ad-item-container {
   display: flex;
@@ -64,6 +64,9 @@ input {
   transform: translateY(-50%);
 }
 /* 메뉴 카테고리 */
+.menu-category {
+  background-image: url(../img/paper.jpg);
+}
 .menu-category ul {
   display: flex;
   flex-flow: row wrap;
@@ -81,6 +84,10 @@ input {
 }
 .menu-category img {
   width: 70px;
+  transition: all ease-out .3s;
+}
+.menu-category img:hover {
+  transform: rotate( 20deg );
 }
 /* 가게 검색 폼 */
 .search-store-wrap {
@@ -88,12 +95,21 @@ input {
   justify-content: center;
   padding-top: 8px;
   flex-grow: 1;
+  background-image: url(../img/paper.jpg);
 }
 #search-store {
   width: 420px;
-  padding: 15px;
+  padding: 11px 15px;
   border: 1px solid #000;
   border-radius: 20px;
+  box-sizing: border-box;
+}
+#search-store:focus-visible {
+  box-sizing: border-box;
+  outline: none;
+  border: 2px solid #2ac1bc;
+  border-radius: 20px;
+  padding: 10px 14px;
 }
 /* 메인 메뉴 */
 .main-menu {
@@ -106,6 +122,9 @@ input {
 }
 .main-menu ul li {
   flex: 1 1 0;
+}
+.main-menu ul li:hover {
+  box-shadow: 1px 1px 7px 1px gray inset;
 }
 .main-menu li:not(:last-child) {
   border-right: 1px solid #000;
