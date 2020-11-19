@@ -152,7 +152,7 @@ $container.addEventListener('scroll', () => {
 });
 
 $prevBtn.onclick = () => {
-  location.replace(`/category?cate=${store.category}`);
+  window.history.back();
 };
 
 $storeChangeBtn.onclick = e => {

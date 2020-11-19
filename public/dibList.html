@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마이페이지 | 돼지의 민족</title>
+
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css" />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/dibList.css" />
+
+    <!-- JS Link -->
+    <script defer src="js/request.js"></script>
+    <script defer src="js/dibList.js"></script>
+  </head>
+<body>
+  <div class="container">
+    <!-- 헤더 영역 -->
+    <header class="header">
+      <h1 class="dib-title">찜한 가게</h1>
+    </header>
+    <!-- 가게 목록 -->
+      <ul id="storeList" class="store-list">
+
+        <!-- <li class="store-item">
+          <a href="#">
+            <img src="img/BBQ.jpg" alt="BBQ" class="store-img" />
+            <div class="store-description">
+              <p class="store-name">BBQ</p>
+              <p><i class="fas fa-star"></i>3.7 (4)</p>
+              <p><i class="far fa-clock"></i>37분 / 최소주문 12,000원</p>
+              <p>배달팁 3,000원</p>
+            </div>
+          </a>
+        </li>
+        <li class="store-item">
+          <a href="#">
+            <img src="img/BBQ.jpg" alt="BBQ" class="store-img" />
+            <div class="store-description">
+              <p class="store-name">BBQ</p>
+              <p><i class="fas fa-star"></i>3.7 (4)</p>
+              <p><i class="far fa-clock"></i>37분 / 최소주문 12,000원</p>
+              <p>배달팁 3,000원</p>
+            </div>
+          </a>
+        </li>
+        <li class="store-item">
+          <a href="#">
+            <img src="img/BBQ.jpg" alt="BBQ" class="store-img" />
+            <div class="store-description">
+              <p class="store-name">BBQ</p>
+              <p><i class="fas fa-star"></i>3.7 (4)</p>
+              <p><i class="far fa-clock"></i>37분 / 최소주문 12,000원</p>
+              <p>배달팁 3,000원</p>
+            </div>
+          </a>
+        </li>
+        <li class="store-item">
+          <a href="#">
+            <img src="img/BBQ.jpg" alt="BBQ" class="store-img" />
+            <div class="store-description">
+              <p class="store-name">BBQ</p>
+              <p><i class="fas fa-star"></i>3.7 (4)</p>
+              <p><i class="far fa-clock"></i>37분 / 최소주문 12,000원</p>
+              <p>배달팁 3,000원</p>
+            </div>
+          </a>
+        </li>
+        <li class="store-item">
+          <a href="#">
+            <img src="img/BBQ.jpg" alt="BBQ" class="store-img" />
+            <div class="store-description">
+              <p class="store-name">BBQ</p>
+              <p><i class="fas fa-star"></i>3.7 (4)</p>
+              <p><i class="far fa-clock"></i>37분 / 최소주문 12,000원</p>
+              <p>배달팁 3,000원</p>
+            </div>
+          </a>
+        </li>
+        <li class="store-item">
+          <a href="#">
+            <img src="img/BBQ.jpg" alt="BBQ" class="store-img" />
+            <div class="store-description">
+              <p class="store-name">BBQ</p>
+              <p><i class="fas fa-star"></i>3.7 (4)</p>
+              <p><i class="far fa-clock"></i>37분 / 최소주문 12,000원</p>
+              <p>배달팁 3,000원</p>
+            </div>
+          </a>
+        </li>
+        <li class="store-item">
+          <a href="#">
+            <img src="img/BBQ.jpg" alt="BBQ" class="store-img" />
+            <div class="store-description">
+              <p class="store-name">BBQ</p>
+              <p><i class="fas fa-star"></i>3.7 (4)</p>
+              <p><i class="far fa-clock"></i>37분 / 최소주문 12,000원</p>
+              <p>배달팁 3,000원</p>
+            </div>
+          </a>
+        </li>
+        <li class="store-item">
+          <a href="#">
+            <img src="img/BBQ.jpg" alt="BBQ" class="store-img" />
+            <div class="store-description">
+              <p class="store-name">BBQ</p>
+              <p><i class="fas fa-star"></i>3.7 (4)</p>
+              <p><i class="far fa-clock"></i>37분 / 최소주문 12,000원</p>
+              <p>배달팁 3,000원</p>
+            </div>
+          </a>
+        </li>
+        <li class="store-item">
+          <a href="#">
+            <img src="img/BBQ.jpg" alt="BBQ" class="store-img" />
+            <div class="store-description">
+              <p class="store-name">BBQ</p>
+              <p><i class="fas fa-star"></i>3.7 (4)</p>
+              <p><i class="far fa-clock"></i>37분 / 최소주문 12,000원</p>
+              <p>배달팁 3,000원</p>
+            </div>
+          </a>
+        </li>
+        <li class="store-item">
+          <a href="#">
+            <img src="img/BBQ.jpg" alt="BBQ" class="store-img" />
+            <div class="store-description">
+              <p class="store-name">BBQ</p>
+              <p><i class="fas fa-star"></i>3.7 (4)</p>
+              <p><i class="far fa-clock"></i>37분 / 최소주문 12,000원</p>
+              <p>배달팁 3,000원</p>
+            </div>
+          </a>
+        </li>
+        <li class="store-item">
+          <a href="#">
+            <img src="img/BBQ.jpg" alt="BBQ" class="store-img" />
+            <div class="store-description">
+              <p class="store-name">BBQ</p>
+              <p><i class="fas fa-star"></i>3.7 (4)</p>
+              <p><i class="far fa-clock"></i>37분 / 최소주문 12,000원</p>
+              <p>배달팁 3,000원</p>
+            </div>
+          </a>
+        </li> -->
+      </ul>
+
+    
+    <!-- 메인 메뉴 -->
+    <div class="main-menu">
+      <ul>
+        <li>
+          <a href="/">
+            <img src="./img/홈.png" alt="메인메뉴,홈버튼" />
+            홈
+          </a>
+        </li>
+        <li>
+          <a href="/todayfood">
+            <img src="./img/123.svg" alt="메인메뉴,뭐먹지 버튼" />
+            뭐 먹지?
+          </a>
+        </li>
+        <li>
+          <a href="/dibList">
+            <img src="./img/가게상세-찜.png" alt="찜 버튼" />
+            찜한 가게
+          </a>
+        </li>
+        <li>
+          <a href="/mypage">
+            <img src="./img/마이페이지.svg" alt="마이 페이지 버튼" />
+            My page
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+    <script
+  src="https://kit.fontawesome.com/58ac09fa66.js"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>

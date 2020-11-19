@@ -1,22 +1,18 @@
 .container {
   display: flex;
   flex-flow: column;
+
 }
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
   display: flex;
   padding: 15px 0;
   border-bottom: 2px solid rgb(192, 192, 192);
+  background-color: #fff;
 }
-.prev-btn {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-  font-size: 30px;
-  cursor: pointer;
-}
-.cate-title {
+
+.dib-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,8 +21,14 @@
   font-size: 25px;
   font-family: 'yeonsung';
 }
+
+/* 가게 목록 */
 .store-list {
   font-family: 'yeonsung';
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  overflow: auto;
 }
 .store-item > a {
   display: flex;
@@ -40,8 +42,6 @@
   object-fit: cover;
   border-radius: 15px;
 }
-.store-description {
-}
 .store-description > p {
   margin-bottom: 5px;
 }
@@ -53,4 +53,33 @@
 }
 .fa-star {
   color: rgb(246, 246, 0);
+}
+
+
+/* 메인 메뉴 */
+.main-menu {
+  font-family: 'hanna';
+  position: sticky;
+  bottom: 0;
+  border-top: 1px solid #000;
+  background-color: #fff;
+}
+.main-menu ul {
+  display: flex;
+}
+.main-menu ul li {
+  flex: 1 1 0;
+}
+.main-menu li:not(:last-child) {
+  border-right: 1px solid #000;
+}
+.main-menu a {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 5px 0;
+}
+.main-menu img {
+  width: 35px;
+  padding-bottom: 5px;
 }
