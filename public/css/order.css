@@ -18,6 +18,14 @@ body {
   align-items: center;
   border-bottom: 1px solid #ddd;
 }
+.prev-btn {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+}
 .header h1 {
   font-family: 'dohyeon';
   font-size: 22px;
@@ -43,7 +51,8 @@ body {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
 }
-.store-name, .delivery-msg {
+.store-name,
+.delivery-msg {
   text-indent: 15px;
 }
 .store-name {
@@ -117,14 +126,17 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.plus-btn, .minus-btn, .count {
+.plus-btn,
+.minus-btn,
+.count {
   width: 40px;
   font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.plus-btn, .minus-btn {
+.plus-btn,
+.minus-btn {
   cursor: pointer;
   user-select: none;
 }
@@ -166,12 +178,15 @@ body {
   font-size: 19px;
   border: 0;
   border-radius: 4px;
-  background-color: #2AC1BC;
+  background-color: #2ac1bc;
   color: #fff;
   font-family: 'dohyeon';
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.order-price {
+  margin-right: 10px;
 }
 .list-count-wrap {
   margin: 0 10px;
@@ -180,13 +195,13 @@ body {
   line-height: 28px;
   border-radius: 50%;
   background-color: #fff;
-  color: #2AC1BC;
+  color: #2ac1bc;
 }
 
 /* 텅 빈 주문 목록 */
 .empty-order-list {
   background-color: #eee;
-  background-image: url(/public/img/empty-img.png);
+  background-image: url(../img/empty-img.png);
   background-size: 80%;
   background-position: center 180%;
   width: 508px;

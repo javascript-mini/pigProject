@@ -71,5 +71,5 @@ window.onload = () => {
 };
 
 $prevBtn.onclick = () => {
-  window.history.back();
+  location.replace('/');
 };

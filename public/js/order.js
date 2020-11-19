@@ -1,30 +1,10 @@
 // state
-const storeNameFromServer = '소바식당';
+const storeNameFromServer = sessionStorage.getItem('sessionStoreName');
+const orderDataFromServer = JSON.parse(sessionStorage.getItem('orderList'));
 let orders = [];
-const orderDataFromServer = [
-  {
-    menuName: "게딱지장덮밥",
-    menuPrice: "8000",
-    menuImg: "소바식당-게딱지장덮밥.jpeg"
-  },
-  {
-    menuName: "냉소바",
-    menuPrice: "7000",
-    menuImg: "소바식당-냉소바.jpeg"
-  },
-  {
-    menuName: "한우사태냉소바",
-    menuPrice: "11000",
-    menuImg: "소바식당-한우사태냉소바.jpeg"
-  },
-  {
-    menuName: "한우양지온반",
-    menuPrice: "8000",
-    menuImg: "소바식당-한우양지온반.jpeg"
-  }
-];
 
 // Doms
+const $prevBtn = document.getElementById('prevBtn');
 const $storeName = document.querySelector('.store-name');
 const $orderLists = document.querySelector('.order-lists');
 const $deleteAll = document.querySelector('.delete-all');
@@ -35,18 +15,31 @@ const $orderPriceNodes = document.querySelectorAll('.order-price');
 
 // 총 주문 금액 계산
 const sumPrice = function () {
-  return [...$orderLists.children].reduce((acc, list) => acc + (+list.firstElementChild.nextElementSibling.lastElementChild.firstElementChild.textContent), 0);
+  return [...$orderLists.children].reduce(
+    (acc, list) =>
+      acc +
+      +list.firstElementChild.nextElementSibling.lastElementChild
+        .firstElementChild.textContent,
+    0
+  );
 };
 
 // 총 주문 금액 요소에 표시
 const renderSumPrice = () => {
-  $orderPriceNodes.forEach(priceNode => priceNode.textContent = `${sumPrice()} 원`);
+  $orderPriceNodes.forEach(
+    priceNode => (priceNode.textContent = `${sumPrice()} 원`)
+  );
 };
 
 // 총 주문 개수 표시
 const renderListCount = () => {
-  const listConut = [...$orderLists.children].reduce((acc, orderList) => acc +
-  (+orderList.lastElementChild.firstElementChild.nextElementSibling.textContent), 0);
+  const listConut = [...$orderLists.children].reduce(
+    (acc, orderList) =>
+      acc +
+      +orderList.lastElementChild.firstElementChild.nextElementSibling
+        .textContent,
+    0
+  );
 
   $listCount.textContent = listConut;
   renderSumPrice();
@@ -54,17 +47,21 @@ const renderListCount = () => {
 
 // counter의 증감버튼 클릭 시의 메뉴금액표시 변경 함수
 const renderMenuPrice = target => {
-  const $menuPrice = target.parentNode.previousElementSibling.previousElementSibling.lastElementChild.firstElementChild;
+  const $menuPrice =
+    target.parentNode.previousElementSibling.previousElementSibling
+      .lastElementChild.firstElementChild;
   let count;
   let accountPrice;
   if (target.previousElementSibling) {
     count = +target.previousElementSibling.textContent;
-    accountPrice = +$menuPrice.textContent + $menuPrice.textContent / (count - 1);
+    accountPrice =
+      +$menuPrice.textContent + $menuPrice.textContent / (count - 1);
     $menuPrice.textContent = accountPrice;
     console.log($menuPrice.textContent);
   } else {
     count = +target.nextElementSibling.textContent;
-    accountPrice = +$menuPrice.textContent - $menuPrice.textContent / (count + 1);
+    accountPrice =
+      +$menuPrice.textContent - $menuPrice.textContent / (count + 1);
     console.log(accountPrice);
     $menuPrice.textContent = accountPrice;
     console.log($menuPrice.textContent);
@@ -73,7 +70,8 @@ const renderMenuPrice = target => {
 
 // 주문메뉴 전체 삭제 후 렌더
 const renderEmptyOrderList = () => {
-  document.querySelector('main').innerHTML = '<div class="empty-order-list"></div><p class="empty-msg">선택된 메뉴가 없습니다.</p>';
+  document.querySelector('main').innerHTML =
+    '<div class="empty-order-list"></div><p class="empty-msg">선택된 메뉴가 없습니다.</p>';
   document.querySelector('.order-btn-wrap').style.display = 'none';
 };
 
@@ -91,7 +89,7 @@ const render = () => {
       <p class="menu-name">${order.menuName}</p>
       <div class="menu-price-wrap"><p class="menu-price">${order.menuPrice}</p><span>원</span></div>
     </div>
-    <img class="menu-img" src="/public/img/${order.menuImg}" alt="${order.menuName} 사진" />
+    <img class="menu-img" src="./img/${order.menuImg}" alt="${order.menuName} 사진" />
     <div class="counter">
       <span class="minus-btn">-</span><span class="count">1</span><span class="plus-btn">+</span>
     </div>
@@ -110,17 +108,21 @@ const fetchOrders = () => {
 
 $orderLists.onclick = e => {
   if (e.target.matches('.delete-btn')) {
-    orders = orders.filter(order => order.menuName !== e.target.nextElementSibling.firstElementChild.textContent);
+    orders = orders.filter(
+      order =>
+        order.menuName !==
+        e.target.nextElementSibling.firstElementChild.textContent
+    );
     render();
   } else if (e.target.matches('.plus-btn')) {
     const count = e.target.previousElementSibling.textContent;
-    e.target.previousElementSibling.textContent = (+count) + 1;
+    e.target.previousElementSibling.textContent = +count + 1;
     renderMenuPrice(e.target);
     renderListCount();
   } else if (e.target.matches('.minus-btn')) {
     if (+e.target.nextElementSibling.textContent === 1) return;
     const count = e.target.nextElementSibling.textContent;
-    e.target.nextElementSibling.textContent = (+count) - 1;
+    e.target.nextElementSibling.textContent = +count - 1;
     renderMenuPrice(e.target);
     renderListCount();
   }
@@ -134,6 +136,11 @@ window.onload = () => {
 $deleteAll.onclick = () => {
   orders = [];
   renderEmptyOrderList();
+};
+
+// 뒤로가기
+$prevBtn.onclick = () => {
+  window.history.back();
 };
 
 // document.querySelector('.order-btn').onclick => e => {

@@ -14,12 +14,17 @@
     <link rel="stylesheet" href="css/order.css" />
 
     <!-- JS Link -->
+    <script
+      src="https://kit.fontawesome.com/58ac09fa66.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="js/request.js"></script>
     <script defer src="js/order.js"></script>
   </head>
   <body>
     <div class="container">
       <header class="header">
+        <i id="prevBtn" class="fas fa-arrow-left prev-btn"></i>
         <h1>주문하기</h1>
         <div class="delete-all">전체삭제</div>
       </header>
@@ -48,14 +53,19 @@
           <span>총 주문금액</span><span class="order-price">50,000 원</span>
         </div>
         <div class="warning-msg">
-          <p>돼지의민족은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서</p>
+          <p>
+            돼지의민족은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서
+          </p>
           <p>돼지의민족은 상품, 거래 정보 및 거래에 책임을 지지 않습니다.</p>
         </div>
       </main>
       <div class="order-btn-wrap">
         <button class="order-btn">
-          <span class="list-count-wrap"><span class="list-count">10</span></span>
-          <span class="order-price">60000원</span>배달 주문하기</button>
+          <span class="list-count-wrap"
+            ><span class="list-count">10</span></span
+          >
+          <span class="order-price">60000원</span> 배달 주문하기
+        </button>
       </div>
     </div>
   </body>
