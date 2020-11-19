@@ -57,14 +57,11 @@ const renderMenuPrice = target => {
     accountPrice =
       +$menuPrice.textContent + $menuPrice.textContent / (count - 1);
     $menuPrice.textContent = accountPrice;
-    console.log($menuPrice.textContent);
   } else {
     count = +target.nextElementSibling.textContent;
     accountPrice =
       +$menuPrice.textContent - $menuPrice.textContent / (count + 1);
-    console.log(accountPrice);
     $menuPrice.textContent = accountPrice;
-    console.log($menuPrice.textContent);
   }
 };
 
@@ -87,11 +84,11 @@ const render = () => {
     <div class="delete-btn"></div>
     <div class="menu-info">
       <p class="menu-name">${order.menuName}</p>
-      <div class="menu-price-wrap"><p class="menu-price">${order.menuPrice}</p><span>원</span></div>
+      <div class="menu-price-wrap"><p class="menu-price">${order.menuPrice * order.menuEa}</p><span>원</span></div>
     </div>
     <img class="menu-img" src="./img/${order.menuImg}" alt="${order.menuName} 사진" />
     <div class="counter">
-      <span class="minus-btn">-</span><span class="count">1</span><span class="plus-btn">+</span>
+      <span class="minus-btn">-</span><span class="count">${order.menuEa}</span><span class="plus-btn">+</span>
     </div>
   </li>`;
   });
@@ -118,12 +115,18 @@ $orderLists.onclick = e => {
     if (+e.target.previousElementSibling.textContent === 10) return;
     const count = e.target.previousElementSibling.textContent;
     e.target.previousElementSibling.textContent = +count + 1;
+    const $plusBtns = document.querySelectorAll('.plus-btn');
+    const menuIdx = [...$plusBtns].findIndex(btn => btn === e.target);
+    orders[menuIdx].menuEa = +orders[menuIdx].menuEa + 1;
     renderMenuPrice(e.target);
     renderListCount();
   } else if (e.target.matches('.minus-btn')) {
     if (+e.target.nextElementSibling.textContent === 1) return;
     const count = e.target.nextElementSibling.textContent;
     e.target.nextElementSibling.textContent = +count - 1;
+    const $minusBtns = document.querySelectorAll('.minus-btn');
+    const menuIdx = [...$minusBtns].findIndex(btn => btn === e.target);
+    orders[menuIdx].menuEa = +orders[menuIdx].menuEa - 1;
     renderMenuPrice(e.target);
     renderListCount();
   }

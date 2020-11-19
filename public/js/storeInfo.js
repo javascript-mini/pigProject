@@ -233,6 +233,7 @@ $orderBtn.onclick = () => {
       menuName: menuItem.foodName,
       menuPrice: menuItem.foodPrice,
       menuImg: menuItem.foodImage,
+      menuEa: 1
     };
 
     oreder.push(orderItem);

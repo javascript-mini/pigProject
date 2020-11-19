@@ -1,9 +1,5 @@
-body {
-  background-color: #ccc;
-}
+
 .container {
-  background-color: #fff;
-  margin: 0 auto;
   padding: 40px 40px 10px 40px;
 }
 .logo {
