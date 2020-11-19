@@ -20,6 +20,10 @@ input {
   justify-content: center;
   align-items: center;
   height: 70px;
+  font-size: 20px;
+}
+.address p {
+  margin-right: 10px;
 }
 .address img {
   width: 25px;
@@ -124,7 +128,7 @@ input {
   flex: 1 1 0;
 }
 .main-menu ul li:hover {
-  box-shadow: 1px 1px 7px 1px gray inset;
+  box-shadow: 1px 1px 7px 1px rgb(209, 209, 209) inset;
 }
 .main-menu li:not(:last-child) {
   border-right: 1px solid #000;
@@ -149,11 +153,15 @@ input {
   background-color: #fff;
   border-bottom: 1px solid #000;
 }
-.map-wrap h1 {
-  text-align: center;
+.input-address-msg {
+  text-align: left;
   font-size: 30px;
-  margin-top: 30px;
+  margin: 20px 0 20px 30px;
 }
+.input-address-msg p{
+  margin: 10px 0;
+}
+
 .map-wrap form,
 .cur-position-wrap {
   display: flex;
@@ -167,19 +175,25 @@ input {
   width: 400px;
   height: 46px;
   padding-left: 10px;
+  font-size: 18px;
 }
 .search-btn {
   background-image: url(../img/검색.svg);
-  background-color: #f1efef;
-  width: 50px;
-  height: 50px;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  background-color: #fff;
+  width: 47px;
+  height: 47px;
   cursor: pointer;
   margin-left: 5px;
 }
 .bd {
-  border: 1px solid #a4a4a4;
-  border-radius: 5px;
-  background-color: #f1efef;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  background-color: rgb(246, 246, 246);
 }
 .prev-btn {
   display: block;
@@ -189,14 +203,21 @@ input {
 }
 .cur-position {
   border-radius: 5px;
-  width: 461px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  width: 452px;
   height: 50px;
   margin-bottom: 20px;
+  background-image: url(../img/position.png);
+  background-size: 6%;
+  background-repeat: no-repeat;
+  background-position: 28% 50%;
   cursor: pointer;
-  background-color: #f1efef;
+  background-color: #fff;
   font-size: 20px;
   font-weight: 10px;
 }
+
 .recent-address {
   font-size: 20px;
 }

@@ -1,6 +1,4 @@
-body {
-  background-color: #bbb;
-}
+
 h2 {
   font-size: 20px;
   font-family: 'jua';
@@ -15,7 +13,6 @@ h2 {
   background-repeat: no-repeat;
   background-position-x: 0;
   background-position-y: 110%;
-  margin: 0 auto;
   padding: 40px;
   z-index: 1;
 }

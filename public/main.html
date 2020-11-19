@@ -22,7 +22,7 @@
     <h1 class="a11y-hidden">메인페이지</h1>
     <!-- 주소 -->
     <header class="address">
-      <p>주소를 입력해 주세요.</p>
+      <p>주소를 입력해 주세요</p>
       <img src="./img/주소영역아이콘.svg" alt="">
     </header>
     <!-- 광고 배너 -->
@@ -106,17 +106,21 @@
       <a href="#" class="prev-btn">
         <i class="fas fa-arrow-left"></i>
       </a>
-      <h1>지번, 도로명, 건물명을 입력하세요</h1>
+      <!-- <h1>지번, 도로명, 건물명을 입력하세요</h1> -->
+      <div class="input-address-msg">
+        <p>지번, 도로명, 건물명을</p>
+        <p>입력하세요</p>
+      </div>
       <form>
         <fieldset>
           <label for="search-address">
             <input type="text" class="bd" id="search-address" placeholder="예&#41; 돼민동 12-3 또는 돼민아파트">
-            <button class="bd search-btn"></button>
+            <button class="search-btn"></button>
           </label>
         </fieldset>
       </form>
       <div class="cur-position-wrap">
-        <button class="bd cur-position">현 위치로 주소 설정</button>
+        <button class="cur-position">현 위치로 주소 설정</button>
       </div>
       <div class="recent-address">
         <h2>최근 주소</h2>

@@ -5,6 +5,7 @@ let pwckCheck = true;
 let nickCheck = true;
 
 // Doms
+const $prevBtn = document.getElementById('prevBtn');
 const $inputId = document.getElementById('userId');
 const $inputPw = document.getElementById('userPw');
 const $inputPwCheck = document.getElementById('pwCheck');
@@ -108,4 +109,8 @@ $btnJoin.onclick = async () => {
     await request.post('/join', newUser);
     location.assign('/login');
   }
+};
+
+$prevBtn.onclick = () => {
+  location.replace('/');
 };

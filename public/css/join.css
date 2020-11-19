@@ -9,6 +9,17 @@
 .logo img {
   width: 100%;
 }
+.prev-btn {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+}
+.fa-arrow-left:before {
+  content: "\f060";
+}
 .join-form {
   width: 300px;
   margin: 30px auto;

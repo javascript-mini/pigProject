@@ -38,6 +38,9 @@
   box-shadow: 0 5px 10px rgb(104, 104, 104);
   text-align: center;
 }
+.store-item:hover {
+  box-shadow: 1px 1px 7px 1px rgb(209, 209, 209) inset;
+}
 .store-name {
   margin-bottom: 20px;
   font-size: 40px;

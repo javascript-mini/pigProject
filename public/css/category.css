@@ -33,6 +33,9 @@
   padding: 15px 15px;
   border-bottom: 1px solid rgb(192, 192, 192);
 }
+.store-item:hover {
+  box-shadow: 1px 1px 7px 1px rgb(209, 209, 209) inset;
+}
 .store-img {
   margin-right: 15px;
   width: 80px;

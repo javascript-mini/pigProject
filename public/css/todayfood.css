@@ -80,6 +80,9 @@ ul {
 .main-menu ul li {
   flex: 1 1 0;
 }
+.main-menu ul li:hover {
+  box-shadow: 1px 1px 7px 1px rgb(209, 209, 209) inset;
+}
 .main-menu li:not(:last-child) {
   border-right: 1px solid #000;
 }
@@ -93,3 +96,4 @@ ul {
   width: 35px;
   padding-bottom: 5px;
 }
+
