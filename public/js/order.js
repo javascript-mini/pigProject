@@ -115,6 +115,7 @@ $orderLists.onclick = e => {
     );
     render();
   } else if (e.target.matches('.plus-btn')) {
+    if (+e.target.previousElementSibling.textContent === 10) return;
     const count = e.target.previousElementSibling.textContent;
     e.target.previousElementSibling.textContent = +count + 1;
     renderMenuPrice(e.target);
