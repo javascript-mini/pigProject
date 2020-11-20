@@ -59,7 +59,8 @@ const movePrev = () => {
 
 const moveNext = () => {
   offset -= itemWidth;
-  if (offset === -3090) {
+  console.log(offset);
+  if (offset === -3096) {
     setTimeout(() => {
       $adItemContainer.style.transition = 'none';
       offset += itemsLength * itemWidth;

@@ -2,6 +2,7 @@
 const $inputReview = document.querySelector('.input-review');
 const $numberOfLetters = document.querySelector('.number-of-letters');
 const $inputLetters = document.querySelector('.input-letters');
+const $prevBtn = document.querySelector('.prev-btn');
 const $stars = document.querySelector('.stars');
 const $failMsg = document.querySelector('.fail-msg');
 const $btnReview = document.querySelector('.btn-review');
@@ -77,4 +78,7 @@ $btnReview.onclick = async () => {
 
     location.assign(`/storeInfo?id=${storeId}&review=true`);
   }
+};
+$prevBtn.onclick = () => {
+  window.history.back();
 };

@@ -24,7 +24,14 @@ h2 {
   width: 300px;
   text-align: center;
 }
-
+.prev-btn {
+  position: absolute;
+  top: 5%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+}
 .stars {
   display: flex;
   flex-flow: row nowrap;
