@@ -14,12 +14,21 @@ const $orderLists = document.querySelector('.order-lists');
 const $orderPrice = document.querySelector('.order-price');
 
 // functions
-const renderOrderSum = () => `${ordersData[0].menuName} 외 ${total[0] - 1}개`;
+const renderOrderSum = () =>
+  `${ordersData[0].menuName} 외 ${ordersData.length - 1}개`;
 
 const renderOrderInfo = () => {
   $storeName.textContent = storeName;
   $orderSum.textContent = renderOrderSum();
-  $orderDate.textContent = `주문일시: ${today.getFullYear()}년 ${today.getMonth() + 1}월 ${today.getDate()}일 ${today.getHours()}:${today.getMinutes()}`;
+  $orderDate.textContent = `주문일시: ${today.getFullYear()}년 ${
+    today.getMonth() + 1 < 10
+      ? `0${today.getMonth() + 1}`
+      : today.getMonth() + 1
+  }월 ${
+    today.getDate() < 10 ? `0${today.getDate()}` : today.getDate()
+  }일 ${today.getHours()}:${
+    today.getMinutes() < 10 ? `0${today.getMinutes()}` : today.getMinutes()
+  }`;
 };
 
 const renderOrderLists = () => {
@@ -36,8 +45,6 @@ const renderOrderLists = () => {
 };
 
 const renderOrderPrice = () => {
-  console.log(total);
-  console.log(total);
   $orderPrice.textContent = `${(+total[1]).toLocaleString()} 원`;
 };
 

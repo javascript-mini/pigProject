@@ -75,9 +75,9 @@ const renderStore = async () => {
   };
 
   $storePriceBox.innerHTML = `
-    <p><span>최소주문금액</span>${store.minPrice}원</p>
+    <p><span>최소주문금액</span>${store.minPrice.toLocaleString()}원</p>
     <p><span>배달시간</span>${store.deliveryTime}분</p>
-    <p><span>배달팁</span>${store.deliveryTip}원</p>
+    <p><span>배달팁</span>${store.deliveryTip.toLocaleString()}원</p>
   `;
 
   let html = '';
@@ -91,7 +91,7 @@ const renderStore = async () => {
       }" />
           <div>
             <p class="menu-name">${li.foodName}</p>
-            <p class="menu-price">${li.foodPrice}원</p>
+            <p class="menu-price">${li.foodPrice.toLocaleString()}원</p>
           </div>
           <img src="img/${li.foodImage}" alt="${li.foodName}" />
         </div>
@@ -233,7 +233,7 @@ $orderBtn.onclick = () => {
       menuName: menuItem.foodName,
       menuPrice: menuItem.foodPrice,
       menuImg: menuItem.foodImage,
-      menuEa: 1
+      menuEa: 1,
     };
 
     oreder.push(orderItem);
