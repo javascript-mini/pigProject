@@ -11,6 +11,7 @@ input {
   display: flex;
   flex-flow: column nowrap;
   background-image: url(../img/paper.jpg);
+  user-select: none;
 }
 /* 주소 영역 */
 .address {

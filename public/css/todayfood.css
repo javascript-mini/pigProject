@@ -21,6 +21,7 @@ ul {
 .today-food {
   font-size: 30px;
   font-weight: 500;
+  user-select: none;
 }
 .food-list-wrap {
   height: 28px;
