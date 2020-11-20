@@ -43,7 +43,6 @@ $inputId.onblur = async () => {
     $failIdMsg.textContent = '중복된 아이디입니다.';
     idCheck = false;
   }
-  console.log(idCheck);
 };
 
 $inputPw.onblur = () => {
@@ -59,7 +58,6 @@ $inputPw.onblur = () => {
     $failPwMsg.textContent = '5~15자의 영문, 숫자를 사용하세요.';
     pwCheck = false;
   }
-  console.log(pwCheck);
 };
 
 $inputPwCheck.onblur = () => {
@@ -75,7 +73,6 @@ $inputPwCheck.onblur = () => {
     $failPwCheckMsg.textContent = '비밀번호가 일치하지 않습니다.';
     pwckCheck = false;
   }
-  console.log(pwckCheck);
 };
 
 $inputNick.onblur = () => {
@@ -91,7 +88,6 @@ $inputNick.onblur = () => {
     $failNickMsg.textContent = '최소 두 자리 이상이어야 합니다.';
     nickCheck = false;
   }
-  console.log(nickCheck);
 };
 
 window.onload = () => {

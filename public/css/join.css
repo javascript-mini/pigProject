@@ -11,7 +11,7 @@
 }
 .prev-btn {
   position: absolute;
-  top: 50%;
+  top: 5%;
   left: 15px;
   transform: translateY(-50%);
   font-size: 30px;
