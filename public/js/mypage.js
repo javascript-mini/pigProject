@@ -9,7 +9,6 @@ const $orderList = document.querySelector('.order-list');
 const getUsers = async () => {
   const res = await request.get('/users');
   userInfo = await res.json();
-  console.log(userInfo);
   render();
   orderRender();
 };
@@ -46,12 +45,10 @@ const render = () => {
   // 비밀번호, 닉네임 조건 안맞을 시 오류 메세지 출력 및
   $userInfoChange.onclick = async e => {
     if (e.target.matches('.user-info-change .pw')) {
-      // console.log(e.target);
       let check = true;
       const pwReg = /^[a-zA-Z0-9]{5,15}$/;
       $errMsgPw.textContent = '';
       $errMsgName.textContent = '';
-      console.log($pwInput.value);
       if (!$pwInput.value.trim()) {
         $errMsgPw.textContent = '필수 정보입니다.';
         check = false;
@@ -115,16 +112,14 @@ const render = () => {
 
 const orderRender = () => {
   let html = '';
-  console.log(userInfo.orderList);
 
   userInfo.orderList.forEach(list => {
-    console.log(list.myMenu);
     html += `<li>
     <span>${list.myStoreName}</span>
     <span><span>${list.myMenu[0].menuName} ${
       list.myMenu.length - 1 ? `외 ${list.myMenu.length - 1}개` : ''
     } </span>
-    ${list.myPrice}원</span>
+    ${Number(list.myPrice).toLocaleString()}원</span>
     <a href="/storeInfo?id=${list.myStoreId}">가게보기</a>
   </li>`;
   });
