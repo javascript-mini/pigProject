@@ -20,6 +20,7 @@ input {
   height: 70px;
   font-size: 20px;
   background-color: #fff;
+  cursor: pointer;
 }
 .address p {
   margin-right: 10px;
@@ -60,12 +61,14 @@ input {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 .next {
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 /* 메뉴 카테고리 */
 .menu-category {
