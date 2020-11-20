@@ -21,8 +21,14 @@ const renderOrderInfo = () => {
   $storeName.textContent = storeName;
   $orderSum.textContent = renderOrderSum();
   $orderDate.textContent = `주문일시: ${today.getFullYear()}년 ${
-    today.getMonth() + 1
-  }월 ${today.getDate()}일 ${today.getHours()}:${today.getMinutes()}`;
+    today.getMonth() + 1 < 10
+      ? `0${today.getMonth() + 1}`
+      : today.getMonth() + 1
+  }월 ${
+    today.getDate() < 10 ? `0${today.getDate()}` : today.getDate()
+  }일 ${today.getHours()}:${
+    today.getMinutes() < 10 ? `0${today.getMinutes()}` : today.getMinutes()
+  }`;
 };
 
 const renderOrderLists = () => {
