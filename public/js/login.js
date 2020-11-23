@@ -10,8 +10,8 @@ $loginForm.onsubmit = async e => {
 
   let check = true;
 
-  const idReg = /^[a-z]+[a-z0-9]{4,11}$/g;
-  const pwReg = /^[a-zA-Z0-9]{4,15}$/;
+  const idReg = /^[a-zA-Z0-9]{5,11}$/;
+  const pwReg = /^[a-zA-Z0-9]{5,15}$/;
 
   $failIdMsg.textContent = '';
   $failPwMsg.textContent = '';
@@ -21,7 +21,7 @@ $loginForm.onsubmit = async e => {
     check = false;
     return;
   } else if (!idReg.test($inputId.value)) {
-    $failIdMsg.textContent = '아이디는 5~12자 이내여야 합니다.';
+    $failIdMsg.textContent = '아이디는 5~11자 이내여야 합니다.';
     check = false;
     return;
   }

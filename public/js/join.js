@@ -17,7 +17,7 @@ const $failNickMsg = document.querySelector('.fail-nick-msg');
 const $btnJoin = document.querySelector('.btn-join');
 
 // Reg
-const idReg = /^[A-Za-z0-9]{5,11}$/;
+const idReg = /^[a-zA-Z0-9]{5,11}$/;
 const pwReg = /^[a-zA-Z0-9]{5,15}$/;
 const nicReg = /^[\wㄱ-ㅎㅏ-ㅣ가-힣]{2,20}$/;
 
